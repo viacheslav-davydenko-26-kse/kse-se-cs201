@@ -20,12 +20,15 @@
 """
 
 # TODO 1: відкрийте numbers.txt і прочитайте всі числа у список
+FILE_PATH = "numbers.txt"
 numbers = []
-# ваш код тут
+with open(FILE_PATH, "r") as f:
+    for line in f:
+        numbers.append(int(line.strip()))
 
 # TODO 2: порахуйте суму та середнє арифметичне
-total = None
-average = None
+total = sum(numbers) 
+average = total / len(numbers) 
 
 # TODO 3: запишіть результат у result.txt у форматі:
 #   Сума: <сума>
@@ -33,3 +36,7 @@ average = None
 
 print(f"Сума: {total}")
 print(f"Середнє: {average}")
+
+with open("result.txt", "w", encoding="utf-8") as f:
+    f.write(f"Сума: {total}\n")
+    f.write(f"Середнє: {average}")
