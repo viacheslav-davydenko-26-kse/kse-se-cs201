@@ -8,6 +8,8 @@ try:
     print(10 / num)
 except ValueError:
     print("Помилка!")
+except ZeroDivisionError:
+    print("Помилка! Ділити на нуль не можна!")
 
 # Питання: що станеться, якщо ввести "0"? Чого бракує цьому коду?
 
@@ -16,7 +18,9 @@ except ValueError:
 try:
     x = int("abc")
 except TypeError:
-    print("Помилка!")
+    print("TypeError", "Помилка!")
+except ValueError:
+    print("ValueError", "Помилка!")
 
 # Питання: якого типу насправді помилка виникає тут? Чи спрацює except?
 
@@ -24,13 +28,14 @@ except TypeError:
 # ---------- Завдання 3.3 ----------
 try:
     num = int(input("Введіть число: "))
-    print("Число прийнято!")
     result = 10 / num
     print(f"Результат: {result}")
 except ValueError:
     print("Некоректне число!")
 except ZeroDivisionError:
     print("На нуль ділити не можна!")
+else:
+    print("Число прийнято!")
 
 # Питання: чи завжди повідомлення "Число прийнято!" означає, що все
 # пройшло успішно? Як це виправити за допомогою else?
