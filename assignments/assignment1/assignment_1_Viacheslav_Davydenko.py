@@ -90,6 +90,39 @@ total_cost = total_dishes_cost + tip_amount
 """
 
 # TODO: реалізуйте задачу 2 тут
+week_days = (
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+)
+
+degrees_C_in_week = []
+
+for day in week_days:
+    degrees_F = float(input(f"Type the temperature in degrees Fahrenheit for {day}: "))
+    degrees_C = (degrees_F - 32) / 1.8
+    degrees_C_in_week.append(degrees_C)
+
+    if degrees_C < 10:
+        print("Холодно")
+    elif degrees_C <= 28:
+        print("Тепло")
+    elif degrees_C <= 36:
+        print("Спекотно")
+    else:
+        print("Дуже спекотно")
+
+average_temperature = sum(degrees_C_in_week) / len(degrees_C_in_week)  
+min_temperature = min(degrees_C_in_week)
+max_temperature = max(degrees_C_in_week)
+
+print(average_temperature)
+print(min_temperature)
+print(max_temperature)
 
 
 # ============================================================
