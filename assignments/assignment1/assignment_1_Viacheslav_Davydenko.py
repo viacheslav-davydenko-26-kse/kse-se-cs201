@@ -218,6 +218,22 @@ elif enemy_HP > player_HP:
 Після 12 місяців користувач вирішує:
 - зняти заощадження;
 - або залишити їх на рахунку на наступний рік.
+??? і що далі?
 """
 
 # TODO: реалізуйте задачу 4 тут
+MONTH_QUANTITY = 12
+deposit = 0
+
+salary = float(input("Type your salary: ")) 
+savings_percentage = float(input("Type the percentage of the salary to be saved: "))
+bank_annual_interest_rate = float(input("Type the bank's annual interest rate in percent: "))
+bank_monthly_interest_rate = bank_annual_interest_rate / 12
+
+for month in range(MONTH_QUANTITY):
+    monthly_contribution = salary * (savings_percentage / 100)
+    deposit += monthly_contribution
+    deposit += deposit * (bank_monthly_interest_rate / 100)
+    print(f"Current deposit balance in month {month + 1}: {deposit}")
+
+answer = input("withdraw or keep the deposit for next year? (y/n)?: ")
