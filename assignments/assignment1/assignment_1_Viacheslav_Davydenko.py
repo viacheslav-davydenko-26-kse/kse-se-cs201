@@ -56,14 +56,14 @@ for i in range(quantity_of_dishes):
     price = float(input(f"What is the price of the {i + 1} dish?: "))
     dishes_prices.append(price)
 
-tip_percentages = float(input(f"Tell me the tip percentage: "))
+tip_percentage = float(input(f"Tell me the tip percentage: "))
 
 
 total_dishes_cost = sum(dishes_prices)
 if total_dishes_cost > DISCOUNTED_PRICE:
     total_dishes_cost -= total_dishes_cost * (DISCOUNT_PERCENTAGE / 100)
 
-tip_amount = total_dishes_cost * (tip_percentages / 100)
+tip_amount = total_dishes_cost * (tip_percentage / 100)
 
 total_cost = total_dishes_cost + tip_amount
 
@@ -236,4 +236,4 @@ for month in range(MONTH_QUANTITY):
     deposit += deposit * (bank_monthly_interest_rate / 100)
     print(f"Current deposit balance in month {month + 1}: {deposit}")
 
-answer = input("withdraw or keep the deposit for next year? (y/n)?: ")
+answer = input("Withdraw or keep the deposit for next year? (y/n)?: ")
