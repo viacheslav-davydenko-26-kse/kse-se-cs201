@@ -50,7 +50,7 @@ DISCOUNT_PERCENTAGE = 10
 quantity_of_dishes = 0
 dishes_prices = []
 
-quantity_of_dishes = float(input("How many dishes are there?: "))
+quantity_of_dishes = int(input("How many dishes are there?: "))
 
 for i in range(quantity_of_dishes):
     price = float(input(f"What is the price of the {i + 1} dish?: "))
