@@ -8,10 +8,11 @@ Assignment #1 — Programming Basics
 Робота виконується індивідуально та самостійно.
 """
 
+"""
 ВАЖЛИВО: Файл із готовим рішенням потрібно прикріпити на платформі у відповідному Assignment.
 Назва готового файлу має бути у форматі: assignment_1_firstname_lastname.py,
 де firstname та lastname — ім’я та прізвище студента саме так, як вони записані на платформі.
-
+"""
 
 
 """
@@ -41,7 +42,28 @@ Assignment #1 — Programming Basics
 """
 
 # TODO: реалізуйте задачу 1 тут
+DISCOUNTED_PRICE = 2000
+DISCOUNT_PERCENTAGE = 10
 
+quantity_of_dishes = 0
+dishes_prices = []
+
+quantity_of_dishes = float(input("How many dishes are there?: "))
+
+for i in range(quantity_of_dishes):
+    price = float(input(f"What is the price of the {i + 1} dish?: "))
+    dishes_prices.append(price)
+
+tip_percentages = float(input(f"Tell me the tip percentage: "))
+
+
+total_dishes_cost = sum(dishes_prices)
+if total_dishes_cost > DISCOUNTED_PRICE:
+    total_dishes_cost -= total_dishes_cost * (DISCOUNT_PERCENTAGE / 100)
+
+tip_amount = total_dishes_cost * (tip_percentages / 100)
+
+total_cost = total_dishes_cost + tip_amount
 
 # ============================================================
 # ЗАДАЧА 2. Перетворення температури і статистика
