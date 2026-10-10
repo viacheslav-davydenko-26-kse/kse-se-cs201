@@ -376,7 +376,7 @@ dishes_times_sorted = sorted(dishes_times, key=lambda p: p[1])
 print(dishes_times_sorted)
 
 
-# ---------- Завдання 14 ----------
+print("# ---------- Завдання 14 ----------")
 # [Домен] Бібліотека
 #
 # [Опис завдання] Є список назв книг. Потрібно знайти назву з
@@ -398,6 +398,10 @@ print(dishes_times_sorted)
 # однаковим індексом в обох списках стосується однієї й тієї самої
 # книги, тому позиція максимуму в одному списку вказує на потрібний
 # елемент в іншому.
+book_titles = ["adslkfj", "jajsgadsg", "dds", "sdf32fds", "kkkkkkk"]
+title_lengths = [len(t) for t in book_titles]
+index_of_max_title = title_lengths.index(max(title_lengths))
+print(book_titles[index_of_max_title], title_lengths[index_of_max_title])
 
 
 # %% ---- СУПЕР СКЛАДНЕ ----
