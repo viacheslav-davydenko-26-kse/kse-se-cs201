@@ -169,6 +169,13 @@ print(grades, grades_sum)
 # об'єднайте цей результат із is_loyalty_member за допомогою оператора
 # and, щоб отримати підсумкову булеву змінну gets_discount. Виведіть
 # gets_discount.
+DISCOUNT_THRESHOLD = 100
+total_purchase_amount = 101 
+is_loyalty_member = True
+
+gets_discount = (total_purchase_amount >= DISCOUNT_THRESHOLD) and is_loyalty_member
+
+print(gets_discount)
 
 
 # ---------- Кейс 8 ----------
