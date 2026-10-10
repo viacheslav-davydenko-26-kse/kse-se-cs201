@@ -41,10 +41,18 @@ print(person["age"])
 print(person["city"])
 
 
-# ---------- Завдання 2 ----------
+print("# ---------- Завдання 2 ----------")
 # Створіть словник student із ключами "name" і "grade". Додайте до нього
 # новий ключ "subject" зі значенням-назвою предмета. Змініть значення
 # ключа "grade" на нове. Виведіть словник до і після цих змін.
+student = {
+    "name": "Volodymyr",
+    "grade": 12,
+}
+print(student)
+student["subject"] = "Math"
+student["grade"] = 1
+print(student)
 
 
 # ---------- Завдання 3 ----------
