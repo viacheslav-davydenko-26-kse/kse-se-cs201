@@ -346,7 +346,7 @@ hot_temps = [t for t in temperatures if t > 30]
 
 print(hot_temps, len(hot_temps))
 
-# ---------- Завдання 13 ----------
+print("# ---------- Завдання 13 ----------")
 # [Домен] Кулінарія
 #
 # [Опис завдання] Є список страв і список часу їх приготування.
@@ -367,6 +367,13 @@ print(hot_temps, len(hot_temps))
 # Пояснення: для пари (назва, час) критерієм сортування є сам час —
 # пошукайте, як записати такий критерій одним рядком через
 # lambda pair: pair[1].
+dishes = ["dish1", "dish2", "dish3", "dish4", "dish5"]
+cook_times = [45, 88, 22, 67, 5]
+dishes_times = list(zip(dishes, cook_times))
+
+dishes_times_sorted = sorted(dishes_times, key=lambda p: p[1])
+
+print(dishes_times_sorted)
 
 
 # ---------- Завдання 14 ----------
