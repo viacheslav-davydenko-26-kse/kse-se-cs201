@@ -92,7 +92,7 @@ for i in range(num_points):
 pi_estimate = 4 * points_inside_circle / num_points
 print(pi_estimate)
 
-# %% ========== Завдання 3 ==========
+print("# %% ========== Завдання 3 ==========")
 # [Домен] Біологія / екологічне моделювання — ріст популяції
 #
 # [Опис завдання] На острові живе популяція кроликів. Щороку вона
@@ -119,6 +119,23 @@ print(pi_estimate)
 # наближається до capacity, — множник (1 - population / capacity) стає
 # дедалі меншим, тому приріст сповільнюється природним чином, без
 # додаткових умов у формулі.
+population = 10
+growth_rate = 0.3
+capacity = 500
+years = 30
+
+population_history = [population]
+
+for year in range(years):
+    population = population + growth_rate * population * (1 - population / capacity)
+    population_history.append(population)
+
+print(population_history)
+
+for year, p in enumerate(population_history):
+    if p > 0.9 * capacity:
+        print(year + 1)
+        break
 
 
 # %% ========== Завдання 4 ==========
