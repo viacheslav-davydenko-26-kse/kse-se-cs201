@@ -122,6 +122,14 @@ print(original_price, discount_amount, final_price)
 # 5. Обчисліть індекс середнього елемента як довжина // 2 і зверніться
 #    до нього за індексом.
 # 6. Виведіть довжину списку та середню категорію.
+january_expenses = ["продукти", "транспорт", "їжа", "розваги"]
+february_expenses = ["ігри", "подорожі", "донат на ЗСУ"]
+all_expenses = january_expenses + february_expenses
+all_expenses_length = len(all_expenses)
+middle_element_index = all_expenses_length // 2
+middle_element = all_expenses[middle_element_index]
+
+print(all_expenses_length, middle_element)
 
 
 # ---------- Кейс 6 ----------
