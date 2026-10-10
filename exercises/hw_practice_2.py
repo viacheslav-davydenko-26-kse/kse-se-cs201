@@ -269,7 +269,7 @@ leftover_servings = servings - target_servings
 print(servings, doublings, total_flour, leftover_servings)
 
 
-# ---------- Завдання 11 ----------
+print("# ---------- Завдання 11 ----------")
 # [Домен] Спорт
 #
 # [Опис завдання] Є кількість кроків за кожен день тижня. Визначте
@@ -293,7 +293,26 @@ print(servings, doublings, total_flour, leftover_servings)
 #    активний", інакше — "потрібно більше активності".
 # 6. Виведіть active_days, середнє значення, номер найактивнішого дня і
 #    підсумкову оцінку тижня.
+STEPS_IS_DAY_ACTIVE = 8000
+WEEK_IS_ACTIVE_NUMBER = 5 
+weekly_steps = [3453, 9534, 4453, 4444, 9392, 3333, 6900]
+active_days = 0
 
+for steps in weekly_steps:
+    if steps > STEPS_IS_DAY_ACTIVE:
+        active_days += 1
+
+average_steps_per_day = sum(weekly_steps) / len(weekly_steps)
+max_steps = sorted(weekly_steps)[-1]
+max_steps_index = weekly_steps.index(max_steps)
+
+status = ""
+if active_days >= WEEK_IS_ACTIVE_NUMBER:
+    status = "тиждень активний"
+else:
+    status = "потрібно більше активності"
+
+print(active_days, average_steps_per_day, max_steps_index + 1, status)
 
 # %% ---- СКЛАДНІ (знадобиться пошукати трохи додаткової інформації) ----
 
