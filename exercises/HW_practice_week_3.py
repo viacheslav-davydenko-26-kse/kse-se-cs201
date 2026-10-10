@@ -99,6 +99,12 @@ print(first_place, second_place)
 #    discount_amount.
 # 5. Виведіть original_price, discount_amount і final_price.
 
+original_price = 43985
+discount_percent = 20
+discount_amount = original_price * discount_percent / 100
+final_price = original_price - discount_percent
+
+print(original_price, discount_amount, final_price)
 
 # ---------- Кейс 5 ----------
 # [Домен] Особисті фінанси
