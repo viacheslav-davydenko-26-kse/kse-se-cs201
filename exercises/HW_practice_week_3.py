@@ -45,6 +45,11 @@ print(f"{name} {price} {description}")
 # 4. Зверніться до останнього елемента за індексом -1.
 # 5. Виведіть усі три значення (кількість, перша категорія, остання
 #    категорія).
+expenses = ["продукти", "транспорт", "їжа", "розваги"]
+quantity_of_categories = len(expenses)
+first_category = expenses[0]
+last_category = expenses[-1]
+print(quantity_of_categories, first_category, last_category)
 
 
 # ---------- Кейс 3 ----------
