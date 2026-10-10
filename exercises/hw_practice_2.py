@@ -316,7 +316,7 @@ print(active_days, average_steps_per_day, max_steps_index + 1, status)
 
 # %% ---- СКЛАДНІ (знадобиться пошукати трохи додаткової інформації) ----
 
-# ---------- Завдання 12 ----------
+print("# ---------- Завдання 12 ----------")
 # [Домен] Погода
 #
 # [Опис завдання] Є список температур за певний період. Потрібно
@@ -334,7 +334,17 @@ print(active_days, average_steps_per_day, max_steps_index + 1, status)
 # дослідіть синтаксис list comprehension і перепишіть це саме завдання
 # в один рядок: hot_temps = [t for t in temperatures if t > 30].
 # Виведіть отриманий список і його довжину.
+IS_DAY_HOT = 30
+temperatures = [34, 23, 99, 45, 11, -10, 78, 67, 31, 29]
 
+hot_temps = []
+for t in temperatures:
+    if t > IS_DAY_HOT:
+        hot_temps.append(t)
+
+hot_temps = [t for t in temperatures if t > 30]
+
+print(hot_temps, len(hot_temps))
 
 # ---------- Завдання 13 ----------
 # [Домен] Кулінарія
