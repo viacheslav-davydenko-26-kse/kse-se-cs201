@@ -239,3 +239,17 @@ print(name)
 # лінію, побудовану повторенням символу ("-" * 20), а нижче — f-рядок,
 # який показує студента й бал з першої та останньої позиції, звертаючись
 # до елементів пари за індексом (pair[0], pair[1]).
+students = ["Student1", "Student2", "Student3", "Student4", "Student5"]
+scores = [1, 2, 3, 4, 5]
+students_scores = list(zip(students, scores))
+
+first_and_last_pairs = students_scores[0::len(students_scores) - 1]
+# or
+first_and_last_pairs = students_scores[0:1] + students_scores[-1:]
+# or
+students_scores[1:-1] = []
+first_and_last_pairs = students_scores
+
+print("-" * 20)
+print(first_and_last_pairs[0][0], first_and_last_pairs[0][1])
+print(first_and_last_pairs[1][0], first_and_last_pairs[1][1])
