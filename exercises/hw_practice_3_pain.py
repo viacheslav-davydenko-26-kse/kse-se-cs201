@@ -138,7 +138,7 @@ for year, p in enumerate(population_history):
         break
 
 
-# %% ========== Завдання 4 ==========
+print("# %% ========== Завдання 4 ==========")
 # [Домен] Маркетинг — модель вірусного поширення промокоду
 #
 # [Опис завдання] Компанія випустила промокод, і люди діляться ним у
@@ -167,6 +167,19 @@ for year, p in enumerate(population_history):
 # Пояснення: без обмеження через min() кількість "поінформованих" могла
 # б математично вийти більшою за total_audience, чого в реальності
 # статися не може — тому саме ця межа є важливою частиною моделі.
+total_audience = 5000
+informed = 1
+contacts_per_person = 3
+day = 0
+informed_history = []
+
+while informed < total_audience:
+    new_people = min(informed * contacts_per_person, total_audience - informed)
+    informed += new_people
+    day += 1
+    informed_history.append(informed)
+
+print(day, informed_history)
 
 
 # %% ========== Завдання 5 ==========
