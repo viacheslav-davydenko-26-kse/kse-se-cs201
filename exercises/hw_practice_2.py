@@ -406,7 +406,7 @@ print(book_titles[index_of_max_title], title_lengths[index_of_max_title])
 
 # %% ---- СУПЕР СКЛАДНЕ ----
 
-# ---------- Завдання 15 ----------
+print("# ---------- Завдання 15 ----------")
 # [Домен] Подорожі
 #
 # [Опис завдання] Є список напрямків подорожі, і для кожного відома
@@ -432,3 +432,23 @@ print(book_titles[index_of_max_title], title_lengths[index_of_max_title])
 # Пояснення: zip(a, b, c) працює так само, як zip() для двох списків,
 # але повертає трійки замість пар — переконайтесь у цьому на невеликому
 # прикладі, перш ніж писати основне рішення.
+destinations = ["Kyiv", "Warsaw", "Berlin", "Paris", "Madrid"]
+costs = [999, 2345, 9233, 1000, 5000]
+days = [4, 5, 3, 10, 15]
+
+joint_list = list(zip(destinations, costs, days))
+
+remaining_budget = 25000
+remaining_days = 20
+visited = []
+
+for dest, cost, dur in joint_list:
+    if (remaining_budget >= cost) and (remaining_days >= dur):
+        remaining_budget -= cost
+        remaining_days -= dur
+        visited.append(dest)
+    else:
+        break
+
+print(visited)
+print(remaining_budget, remaining_days)
