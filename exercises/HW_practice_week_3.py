@@ -191,6 +191,12 @@ print(gets_discount)
 # об'єднайте цей результат з is_urgent_expense оператором or, щоб
 # отримати булеву змінну needs_review, яка істинна, якщо перевищено
 # бюджет або сталися термінові витрати. Виведіть needs_review.
+budget = 100 
+actual_expenses = 99 
+is_urgent_expense = True
+
+needs_review = (actual_expenses > budget) or is_urgent_expense
+print(needs_review)
 
 
 # ---------- Кейс 9 ----------
