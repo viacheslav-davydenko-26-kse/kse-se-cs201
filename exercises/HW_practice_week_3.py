@@ -146,6 +146,12 @@ print(all_expenses_length, middle_element)
 #    виправлення помилки викладача).
 # 4. Обчисліть суму всіх оцінок функцією sum().
 # 5. Виведіть оновлений список і суму.
+grades = [1, 2, 3, 4, 5, 6, 7, 8]
+grades.append(9)
+grades[3] = 1
+grades_sum = sum(grades)
+
+print(grades, grades_sum)
 
 
 # %% ========== СКЛАДНІ ==========
