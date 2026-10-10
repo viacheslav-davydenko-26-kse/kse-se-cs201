@@ -14,7 +14,7 @@
 Комірки розділені "# %%" — у VS Code / Jupyter їх можна запускати по одній.
 """
 
-# %% ========== Завдання 1 ==========
+print("# %% ========== Завдання 1 ==========")
 # [Домен] Фізика / математичне моделювання — випадкове блукання (random walk)
 #
 # [Опис завдання] Уявний мандрівник починає рух з позиції 0. На кожному
@@ -35,7 +35,25 @@
 # Пояснення: щоб знайти максимальну відстань від нуля, порівнюйте не самі
 # значення позицій зі history, а їхні модулі (abs(value)) — віддалення в
 # мінус так само далеко, як і в плюс.
+import random
 
+position = 0
+num_steps = 100
+history = []
+
+max_distance = 0
+for i in range(num_steps):
+    step = random.choice([1, -1])
+    position += step
+    history.append(position)
+
+    if abs(position) > max_distance:
+        max_distance = abs(position)
+
+print(position)
+print(max_distance)
+# or
+print(max([abs(h) for h in history]))
 
 # %% ========== Завдання 2 ==========
 # [Домен] Статистика / математичне моделювання — метод Монте-Карло
