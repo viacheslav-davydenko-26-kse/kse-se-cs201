@@ -195,7 +195,7 @@ print(status, fine)
 
 
 
-# ---------- Завдання 9 ----------
+print("# ---------- Завдання 9 ----------")
 # [Домен] Погода
 #
 # [Опис завдання] Є температури за 7 днів тижня. Порахуйте кількість
@@ -214,6 +214,25 @@ print(status, fine)
 # 4. Обчисліть амплітуду як різницю між найвищою і найнижчою
 #    температурою.
 # 5. Виведіть усі три лічильники та амплітуду.
+temperatures = [10, -3, -49, 99, 20, 9, -5]
+hot_days = 0
+mild_days = 0
+cold_days = 0
+
+for t in temperatures:
+    if t >= 30:
+        hot_days += 1
+    elif t >= 10:
+        mild_days += 1
+    else:
+        cold_days += 1
+
+temperatures_sorted = sorted(temperatures)
+min_temperature = temperatures_sorted[0]
+max_temperature = temperatures_sorted[-1]
+amplitude = max_temperature - min_temperature
+
+print(hot_days, mild_days, cold_days, amplitude)
 
 
 # ---------- Завдання 10 ----------
