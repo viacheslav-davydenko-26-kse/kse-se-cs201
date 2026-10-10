@@ -182,7 +182,7 @@ while informed < total_audience:
 print(day, informed_history)
 
 
-# %% ========== Завдання 5 ==========
+print("# %% ========== Завдання 5 ==========")
 # [Домен] Особисті фінанси — модель накопичення на депозиті
 #
 # [Опис завдання] Ви відкриваєте банківський депозит із певною річною
@@ -208,3 +208,18 @@ print(day, informed_history)
 # Пояснення: порядок дій важливий — спочатку нараховуються відсотки на
 # те, що вже лежить на депозиті, і лише потім додається нове щомісячне
 # поповнення, на яке відсотки цього самого місяця ще не нараховуються.
+balance = 0
+monthly_deposit = 3000
+annual_rate = 0.08
+goal = 100_000
+monthly_rate = annual_rate / 12
+month = 0
+balance_history = []
+
+while balance < goal:
+    balance += balance * monthly_rate
+    balance += monthly_deposit
+    month += 1
+    balance_history.append(round(balance, 2))
+
+print(month // 12, month % 12, balance_history[-1])
