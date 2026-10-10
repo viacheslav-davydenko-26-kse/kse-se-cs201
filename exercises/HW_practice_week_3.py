@@ -67,6 +67,19 @@ print(quantity_of_categories, first_category, last_category)
 # 4. Присвойте first_place значення second_place.
 # 5. Присвойте second_place значення temp.
 # 6. Виведіть обидві змінні після обміну.
+first_place = "Volodymyr"
+second_place = "Artem"
+
+print(first_place, second_place)
+
+temp = first_place
+first_place = second_place
+second_place = temp
+
+# feature
+# first_place, second_place = second_place, first_place
+
+print(first_place, second_place)
 
 
 # %% ========== СЕРЕДНІ ==========
