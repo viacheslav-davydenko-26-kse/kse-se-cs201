@@ -235,7 +235,7 @@ amplitude = max_temperature - min_temperature
 print(hot_days, mild_days, cold_days, amplitude)
 
 
-# ---------- Завдання 10 ----------
+print("# ---------- Завдання 10 ----------")
 # [Домен] Кулінарія
 #
 # [Опис завдання] Рецепт розрахований на одну порцію, а потрібно
@@ -254,6 +254,19 @@ print(hot_days, mild_days, cold_days, amplitude)
 #    servings перевищив бажану кількість після подвоєнь).
 # 5. Виведіть фінальні servings, doublings, total_flour і
 #    leftover_servings.
+servings = 1
+target_servings = 20
+doublings = 0
+flour_per_serving = 50
+
+while servings < target_servings:
+    servings *= 2
+    doublings += 1
+
+total_flour = flour_per_serving * servings
+leftover_servings = servings - target_servings
+
+print(servings, doublings, total_flour, leftover_servings)
 
 
 # ---------- Завдання 11 ----------
