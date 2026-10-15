@@ -16,7 +16,7 @@ print(total)
 # %% ---------- Завдання 3.2 ----------
 def calculate_discount(price, percent):
     discount = price * percent / 100
-    price - discount
+    return price - discount
 
 
 final_price = calculate_discount(200, 10)
