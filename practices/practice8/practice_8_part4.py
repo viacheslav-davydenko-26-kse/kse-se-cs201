@@ -6,8 +6,9 @@
 # на discount_percent відсотків. Результат округліть до 2 знаків після
 # коми через round().
 def calculate_total(price, quantity, discount_percent=0):
-    # TODO
-    pass
+    total = price * quantity
+    discount_price = total * (discount_percent / 100)
+    return round(total - discount_price, 2)
 
 
 print(calculate_total(50, 3))                                       # очікується: 150.0
