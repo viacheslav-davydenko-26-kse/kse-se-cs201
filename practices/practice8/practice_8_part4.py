@@ -26,13 +26,14 @@ print(calculate_total(price=20, quantity=2, discount_percent=50))   # очіку
 #    де пари розділені символами "; " у тому порядку, в якому їх
 #    передали. Функція нічого не виводить на екран, а лише повертає рядок.
 def count_above(threshold, *numbers):
-    # TODO
-    pass
+    return len([n for n in numbers if n > threshold])
 
 
 def format_profile(**info):
-    # TODO
-    pass
+    result = []
+    for key, value in info.items():
+        result.append(f"{key}={value}")
+    return "; ".join(result)
 
 
 print(count_above(10, 3, 15, 22, 7))            # очікується: 2
