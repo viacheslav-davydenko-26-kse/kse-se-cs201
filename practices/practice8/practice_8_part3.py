@@ -31,6 +31,7 @@ counter = 0
 
 
 def register_call():
+    global counter
     counter += 1
 
 
