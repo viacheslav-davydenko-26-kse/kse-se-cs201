@@ -1,0 +1,7 @@
+Olha,92
+Ivan,75
+Petro,abc
+Anna,88
+
+Taras,60
+Mykola,55
