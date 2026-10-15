@@ -54,32 +54,31 @@ print(format_profile(name="Оля", age=18))       # очікується: name=
 #   3) Видаліть старий код, що повторюється. Вивід має залишитись таким самим.
 #
 # Початковий код:
+
+def get_status(name: str, grades: list) -> str:
+    avg = sum(grades) / len(grades)
+
+    status = ""
+    if avg >= 90:
+        status = "відмінно"
+    elif avg >= 75:
+        status = "добре"
+    else:
+        status = "потрібно підтягнути"
+
+    return f"{name}: {status}"
+
+name1 = "Оля"
 grades_1 = [90, 85, 100]
-avg_1 = sum(grades_1) / len(grades_1)
-if avg_1 >= 90:
-    print("Оля: відмінно")
-elif avg_1 >= 75:
-    print("Оля: добре")
-else:
-    print("Оля: потрібно підтягнути")
+print(get_status(name1, grades_1))
 
+name2 = "Іван"
 grades_2 = [70, 80, 75]
-avg_2 = sum(grades_2) / len(grades_2)
-if avg_2 >= 90:
-    print("Іван: відмінно")
-elif avg_2 >= 75:
-    print("Іван: добре")
-else:
-    print("Іван: потрібно підтягнути")
+print(get_status(name2, grades_2))
 
+name3 = "Петро"
 grades_3 = [50, 60, 40]
-avg_3 = sum(grades_3) / len(grades_3)
-if avg_3 >= 90:
-    print("Петро: відмінно")
-elif avg_3 >= 75:
-    print("Петро: добре")
-else:
-    print("Петро: потрібно підтягнути")
+print(get_status(name3, grades_3))
 
 # TODO: ваш варіант через функцію get_status
 # очікується:
