@@ -35,8 +35,8 @@ print("# %% ---------- Завдання 3.3 ----------")
 def to_int(text):
     try:
         return int(text)
-    except:
-        print("Error")
+    except ValueError:
+        return 0
 
 
 print(to_int("42") + 1)
