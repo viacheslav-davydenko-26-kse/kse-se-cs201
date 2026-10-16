@@ -18,8 +18,7 @@ print(find_even([1, 2, 3, 4, 6]))
 
 print("# %% ---------- Завдання 3.2 ----------")
 def sorted_copy(items):
-    items.sort()
-    return items
+    return sorted(items)
 
 
 original = [3, 1, 2]
