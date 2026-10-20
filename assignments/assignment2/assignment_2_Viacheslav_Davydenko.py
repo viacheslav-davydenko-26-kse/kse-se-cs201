@@ -81,10 +81,10 @@ while tries <= MAX_TRIES:
     j = 0
     while j < secret_word_len:
         s = guess[j]
-        res = result[j]
-        if res == 'correct':
+        res = process_result[j]
+        if res == 'c':
             display.append("["+s.upper()+"]")
-        elif res == 'present':
+        elif res == 'p':
             display.append("("+s+")")
         else:
             display.append(" "+s+" ")
