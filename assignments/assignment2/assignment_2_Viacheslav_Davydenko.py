@@ -25,6 +25,26 @@ def ask_for_guess(tries, expected_word_len):
     else:
         return guess
 
+"""
+This function returns string with chars: [c, p, a]
+that correspond for status of each char is word in specific position
+c - correct
+p - present
+a - absent
+"""
+def process_guess(guess, secret_word):
+    result = [] 
+
+    for ch_g, ch_s in zip(guess, secret_word):
+        if ch_g == ch_s:
+            result.append('c')
+        elif ch_g in secret_word:
+            result.append('p')
+        else:
+            result.append('a')
+
+    return "".join(result)
+
 words = [
     'apple',
     'bread',
@@ -55,16 +75,7 @@ while tries <= MAX_TRIES:
         print("You win!!!")
         break
 
-    result=[]; i = 0
-    while i < secret_word_len:
-        ch = guess[i]
-        if ch == secret_word[i]:
-            result.append('correct')
-        elif ch in secret_word:
-            result.append('present')
-        else:
-            result.append('absent')
-        i += 1
+    process_result = process_guess(guess, secret_word)
 
     display = []
     j = 0
