@@ -48,6 +48,9 @@ tries = 1
 while tries <= MAX_TRIES:
     guess = ask_for_guess(tries)
 
+    if not guess:
+        continue
+
     if guess == secret_word:
         print("You win!!!")
         break
