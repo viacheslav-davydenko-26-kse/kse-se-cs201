@@ -11,8 +11,12 @@
 #     (порожні рядки після очищення в результат не потрапляють).
 # Використайте list comprehension.
 def clean_words(text, min_length=1):
-    # TODO
-    pass
+    text_lower = text.lower()
+    cleaned_words = []
+    for word in text_lower.split():
+        cleaned_words.append(word.strip(".,!?;:")) 
+
+    return [w for w in cleaned_words if len(w) >= min_length] 
 
 
 print(clean_words("Hello, world! A test."))         # очікується: ['hello', 'world', 'a', 'test']
