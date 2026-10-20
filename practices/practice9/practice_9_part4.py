@@ -39,13 +39,28 @@ print(clean_words(""))                              # очікується: []
 # Обидві функції мають бути чистими: без print() і без змін глобальних
 # змінних; вхідний словник у most_common змінювати не можна.
 def word_frequency(*texts):
-    # TODO
-    pass
+    words_count = {}
+    for text in texts:
+        cleaned_words = clean_words(text)
+        for word in cleaned_words:
+            state = words_count.get(word, 0)
+            words_count[word] = state + 1
+    return words_count
 
 
 def most_common(freq):
-    # TODO
-    pass
+    if not freq:
+        return None
+
+    most_common_word = ""
+    most_common_number = 0
+    for word, count in sorted(freq.items()):
+        if count > most_common_number:
+            most_common_word = word
+            most_common_number = count
+
+    return most_common_word
+
 
 
 freq = word_frequency("a b a", "B c")
