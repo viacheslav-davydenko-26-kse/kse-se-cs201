@@ -21,36 +21,37 @@ print("Welcome to Wordle!")
 print(f"Guess the {secret_word_len}-letter word.",
       f"You have {MAX_TRIES} tries.")
 
-while tries!=0:
-    guess = input("Attempt "+str(7 - tries)+"/6 – Enter guess: ").lower()
+tries = 1
+while tries <= MAX_TRIES:
+    guess = input(f"Attempt {tries}/6 – Enter guess: ").lower()
     
-    if len(guess)!=wl:
-        print("Wrong length. Expected", wl)
+    if len(guess) != secret_word_len:
+        print("Wrong length. Expected", secret_word_len)
         continue
 
-    if guess==w:
+    if guess == secret_word:
         print("You win!!!")
         break
 
-    result=[]; i=0
-    while i<wl:
+    result=[]; i = 0
+    while i < secret_word_len:
         ch = guess[i]
-        if ch==w[i]:
+        if ch == secret_word[i]:
             result.append('correct')
-        elif ch in w:
+        elif ch in secret_word:
             result.append('present')
         else:
             result.append('absent')
-        i+=1
+        i += 1
 
-    display=[]
-    j=0
-    while j<wl:
+    display = []
+    j = 0
+    while j < secret_word_len:
         s = guess[j]
         res = result[j]
-        if res=='correct':
+        if res == 'correct':
             display.append("["+s.upper()+"]")
-        elif res=='present':
+        elif res == 'present':
             display.append("("+s+")")
         else:
             display.append(" "+s+" ")
@@ -58,7 +59,7 @@ while tries!=0:
 
     junk = ''.join([c for c in display if c])
     print("Result:", ' '.join(display))
-    tries = tries - 1
+    tries += 1
 else:
     final = secret_word
     print("You lose! The word was:", final)
