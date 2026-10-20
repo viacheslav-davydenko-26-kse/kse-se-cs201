@@ -50,9 +50,16 @@ def make_guess_status_display_string(guess, process_result):
 def welcome():
     print("Welcome to Wordle!")
 
-
 def congratulate():
-    print("You win!!!")
+    print("*************")
+    print("!!!You win!!!")
+    print("*************")
+
+def show_lose_message(secret_word):
+    print("You lose! The word was:", secret_word)
+
+def goodbye():
+    print("Thanks for the game!")
 
 def ask_for_guess(tries, expected_word_len):
     guess = input(f"Attempt {tries}/6 – Enter guess: ")
@@ -91,8 +98,7 @@ def play(words):
 
         tries += 1
     else:
-        final = secret_word
-        print("You lose! The word was:", final)
+        show_lose_message(secret_word)
 
 
 words = [
@@ -117,6 +123,7 @@ while is_playing:
     answer = input("Do you want to play another game? (Y/n): ")
     is_playing = answer.lower() == "y" 
 
+goodbye()
 
 """
 ====================================================================
