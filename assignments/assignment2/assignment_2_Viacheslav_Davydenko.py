@@ -47,10 +47,8 @@ def make_guess_status_display_string(guess, process_result):
 
     return "".join(display)
 
-def welcome(secret_word_len):
+def welcome():
     print("Welcome to Wordle!")
-    print(f"Guess the {secret_word_len}-letter word.",
-          f"You have {MAX_TRIES} tries.")
 
 
 def congratulate():
@@ -85,6 +83,24 @@ def get_result_when_guess(tries, secret_word, secret_word_len):
         congratulate()
         return True
 
+def play(words):
+    secret_word = random.choice(words)
+    secret_word_len = len(secret_word)
+
+    print(f"Guess the {secret_word_len}-letter word.",
+          f"You have {MAX_TRIES} tries.")
+
+    tries = 1
+    while tries <= MAX_TRIES:
+        if get_result_when_guess(tries, secret_word, secret_word_len):
+            break
+        else:
+            tries += 1
+    else:
+        final = secret_word
+        print("You lose! The word was:", final)
+
+
 words = [
     'apple',
     'bread',
@@ -97,20 +113,9 @@ words = [
     'input',
     'joker'
 ]
-secret_word = random.choice(words)
-secret_word_len = len(secret_word)
 
-welcome(secret_word_len)
-
-tries = 1
-while tries <= MAX_TRIES:
-    if get_result_when_guess(tries, secret_word, secret_word_len):
-        break
-    else:
-        tries += 1
-else:
-    final = secret_word
-    print("You lose! The word was:", final)
+welcome()
+play(words)
 
 
 """
