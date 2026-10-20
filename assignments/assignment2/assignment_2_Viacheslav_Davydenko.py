@@ -45,6 +45,21 @@ def process_guess(guess, secret_word):
 
     return "".join(result)
 
+def make_guess_status_display_string(guess, process_result):
+    display = []
+
+    for ch_g, ch_r in zip(guess, process_result):
+        status = ""
+        if ch_r == 'c':
+            status = f"[{ch_g.upper()}]"
+        elif ch_r == 'p':
+            status = f"({ch_g})"
+        else:
+            status = f" {ch_g} "
+        display.append(status)
+
+    return "".join(display)
+
 words = [
     'apple',
     'bread',
@@ -76,22 +91,9 @@ while tries <= MAX_TRIES:
         break
 
     process_result = process_guess(guess, secret_word)
+    display = make_guess_status_display_string(guess, process_result)
 
-    display = []
-    j = 0
-    while j < secret_word_len:
-        s = guess[j]
-        res = process_result[j]
-        if res == 'c':
-            display.append("["+s.upper()+"]")
-        elif res == 'p':
-            display.append("("+s+")")
-        else:
-            display.append(" "+s+" ")
-        j+=1
-
-    junk = ''.join([c for c in display if c])
-    print("Result:", ' '.join(display))
+    print("Result:", display)
     tries += 1
 else:
     final = secret_word
