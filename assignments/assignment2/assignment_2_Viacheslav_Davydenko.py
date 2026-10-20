@@ -12,12 +12,12 @@ def is_word_valid(word, expected_len):
         return False, f"Wrong length. Expected: {expected_len}"
     return True, "Everything is fine"
 
-def ask_for_guess(tries):
+def ask_for_guess(tries, expected_word_len):
     guess = input(f"Attempt {tries}/6 – Enter guess: ")
 
     guess = clear_word(guess)
     
-    is_valid, message = is_word_valid(guess, secret_word_len)
+    is_valid, message = is_word_valid(guess, expected_word_len)
 
     if not is_valid:
         print(message)
@@ -46,7 +46,7 @@ print(f"Guess the {secret_word_len}-letter word.",
 
 tries = 1
 while tries <= MAX_TRIES:
-    guess = ask_for_guess(tries)
+    guess = ask_for_guess(tries, secret_word_len)
 
     if not guess:
         continue
