@@ -1,14 +1,21 @@
 import random
 
-words = ['apple',    'bread','candy',    'dream','eagle','flame','grape','house','input','joker']
-x = random.random()
-y = x * len(words)
-z = int(y)
-secret_word = words[z]
+MAX_TRIES = 6
 
-tries = 6
-wl = len(secret_word)
-w = secret_word
+words = [
+    'apple',
+    'bread',
+    'candy',
+    'dream',
+    'eagle',
+    'flame',
+    'grape',
+    'house',
+    'input',
+    'joker'
+]
+secret_word = random.choice(words)
+secret_word_len = len(secret_word)
 
 print("Welcome to Wordle!")
 print("Guess the",wl,"-letter word. You have", tries, "tries.")
