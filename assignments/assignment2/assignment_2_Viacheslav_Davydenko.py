@@ -12,19 +12,6 @@ def is_word_valid(word, expected_len):
         return False, f"Wrong length. Expected: {expected_len}"
     return True, "Everything is fine"
 
-def ask_for_guess(tries, expected_word_len):
-    guess = input(f"Attempt {tries}/6 – Enter guess: ")
-
-    guess = clear_word(guess)
-    
-    is_valid, message = is_word_valid(guess, expected_word_len)
-
-    if not is_valid:
-        print(message)
-        return None 
-    else:
-        return guess
-
 """
 This function returns string with chars: [c, p, a]
 that correspond for status of each char is word in specific position
@@ -59,6 +46,19 @@ def make_guess_status_display_string(guess, process_result):
         display.append(status)
 
     return "".join(display)
+
+def ask_for_guess(tries, expected_word_len):
+    guess = input(f"Attempt {tries}/6 – Enter guess: ")
+
+    guess = clear_word(guess)
+    
+    is_valid, message = is_word_valid(guess, expected_word_len)
+
+    if not is_valid:
+        print(message)
+        return None 
+    else:
+        return guess
 
 words = [
     'apple',
