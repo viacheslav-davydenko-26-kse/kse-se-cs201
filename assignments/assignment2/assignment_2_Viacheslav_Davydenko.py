@@ -60,6 +60,22 @@ def ask_for_guess(tries, expected_word_len):
     else:
         return guess
 
+def get_result_when_guess(tries, secret_word, secret_word_len):
+    guess = ask_for_guess(tries, secret_word_len)
+
+    if not guess:
+       return False 
+
+    if guess != secret_word:
+        process_result = process_guess(guess, secret_word)
+        display = make_guess_status_display_string(guess, process_result)
+
+        print("Result:", display)
+        return False
+    else:
+        print("You win!!!")
+        return True
+
 words = [
     'apple',
     'bread',
@@ -81,20 +97,10 @@ print(f"Guess the {secret_word_len}-letter word.",
 
 tries = 1
 while tries <= MAX_TRIES:
-    guess = ask_for_guess(tries, secret_word_len)
-
-    if not guess:
-        continue
-
-    if guess == secret_word:
-        print("You win!!!")
+    if get_result_when_guess(tries, secret_word, secret_word_len):
         break
-
-    process_result = process_guess(guess, secret_word)
-    display = make_guess_status_display_string(guess, process_result)
-
-    print("Result:", display)
-    tries += 1
+    else:
+        tries += 1
 else:
     final = secret_word
     print("You lose! The word was:", final)
