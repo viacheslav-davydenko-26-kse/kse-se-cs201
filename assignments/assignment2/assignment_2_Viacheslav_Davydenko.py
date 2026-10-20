@@ -109,7 +109,13 @@ words = [
 ]
 
 welcome()
-play(words)
+
+is_playing = True
+while is_playing:
+    play(words)
+
+    answer = input("Do you want to play another game? (Y/n): ")
+    is_playing = answer.lower() == "y" 
 
 
 """
