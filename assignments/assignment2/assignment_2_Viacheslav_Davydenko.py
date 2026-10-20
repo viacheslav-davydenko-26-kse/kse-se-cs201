@@ -116,17 +116,14 @@ words = [
 
 welcome()
 
-is_playing = True
-while is_playing:
-    try:
+try:
+    is_playing = True
+    while is_playing:
         play(words)
-    except KeyboardInterrupt:
-        print()
-        print("Forced end of the game.") 
-        break
-    else:
         answer = input("Do you want to play another game? (Y/n): ")
         is_playing = answer.lower() == "y" 
+except KeyboardInterrupt:
+    print("\nForced end of the game.") 
 
 goodbye()
 
