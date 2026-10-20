@@ -2,6 +2,16 @@ import random
 
 MAX_TRIES = 6
 
+def clear_word(word):
+    return word.strip().lower()
+
+def is_word_valid(word, expected_len):
+    if not word.isalpha():
+        return False, "The word must contain only letters."
+    if len(word) != expected_len:
+        return False, f"Wrong length. Expected: {expected_len}"
+    return True, "Everything is fine"
+
 words = [
     'apple',
     'bread',
@@ -23,10 +33,14 @@ print(f"Guess the {secret_word_len}-letter word.",
 
 tries = 1
 while tries <= MAX_TRIES:
-    guess = input(f"Attempt {tries}/6 – Enter guess: ").lower()
+    guess = input(f"Attempt {tries}/6 – Enter guess: ")
+
+    guess = clear_word(guess)
     
-    if len(guess) != secret_word_len:
-        print("Wrong length. Expected", secret_word_len)
+    is_valid, message = is_word_valid(guess, secret_word_len)
+
+    if not is_valid:
+        print(message)
         continue
 
     if guess == secret_word:
