@@ -67,22 +67,6 @@ def ask_for_guess(tries, expected_word_len):
     else:
         return guess
 
-def get_result_when_guess(tries, secret_word, secret_word_len):
-    guess = ask_for_guess(tries, secret_word_len)
-
-    if not guess:
-       return False 
-
-    if guess != secret_word:
-        process_result = process_guess(guess, secret_word)
-        display = make_guess_status_display_string(guess, process_result)
-
-        print("Result:", display)
-        return False
-    else:
-        congratulate()
-        return True
-
 def play(words):
     secret_word = random.choice(words)
     secret_word_len = len(secret_word)
@@ -92,10 +76,20 @@ def play(words):
 
     tries = 1
     while tries <= MAX_TRIES:
-        if get_result_when_guess(tries, secret_word, secret_word_len):
-            break
+        guess = ask_for_guess(tries, secret_word_len)
+        if not guess:
+            continue
+
+        if guess != secret_word:
+            process_result = process_guess(guess, secret_word)
+            display = make_guess_status_display_string(guess, process_result)
+
+            print("Result:", display)
         else:
-            tries += 1
+            congratulate()
+            break
+
+        tries += 1
     else:
         final = secret_word
         print("You lose! The word was:", final)
