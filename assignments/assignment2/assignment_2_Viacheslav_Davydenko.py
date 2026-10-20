@@ -18,7 +18,8 @@ secret_word = random.choice(words)
 secret_word_len = len(secret_word)
 
 print("Welcome to Wordle!")
-print("Guess the",wl,"-letter word. You have", tries, "tries.")
+print(f"Guess the {secret_word_len}-letter word.",
+      f"You have {MAX_TRIES} tries.")
 
 while tries!=0:
     guess = input("Attempt "+str(7 - tries)+"/6 – Enter guess: ").lower()
