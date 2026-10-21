@@ -1,6 +1,6 @@
 # %% ========== БЛОК 4. САМОСТІЙНЕ НАПИСАННЯ КОДУ (15 хв) ==========
 
-# ---------- Завдання 4.1 (просте) — math і datetime ----------
+print("# ---------- Завдання 4.1 (просте) — math і datetime ----------")
 # Напишіть дві функції:
 #
 # а) circle_stats(radius) — повертає словник
@@ -18,14 +18,17 @@ from datetime import datetime
 
 
 def circle_stats(radius):
-    # TODO
-    pass
+    stats = {} 
+    stats["area"] = round(math.pi * radius ** 2, 2)
+    stats["circumference"] = round(2 * math.pi * radius, 2)
+    return stats
 
 
 def days_until(deadline, today):
-    # TODO
-    pass
-
+    deadline_date = datetime.strptime(deadline, "%d.%m.%Y")
+    today_date = datetime.strptime(today, "%d.%m.%Y")
+    delta_date = deadline_date - today_date
+    return delta_date.days 
 
 print(circle_stats(5))                           # очікується: {'area': 78.54, 'circumference': 31.42}
 print(circle_stats(1))                           # очікується: {'area': 3.14, 'circumference': 6.28}
@@ -34,7 +37,7 @@ print(days_until("01.12.2024", "20.12.2024"))    # очікується: -19
 print(days_until("15.03.2024", "15.03.2024"))    # очікується: 0
 
 
-# %% ---------- Завдання 4.2 (середнє) — власний модуль ----------
+print("# %% ---------- Завдання 4.2 (середнє) — власний модуль ----------")
 # а) Створіть поруч файл text_tools.py з двома функціями:
 #      word_count(text)   — кількість слів у рядку (слова розділені пробілами;
 #                           з обох кінців кожного слова приберіть ".,!?;:",
@@ -57,7 +60,7 @@ print(days_until("15.03.2024", "15.03.2024"))    # очікується: 0
 # Ваш код тут (імпорт і виклики):
 
 
-# %% ---------- Завдання 4.3 (потрібен інтернет) — requests ----------
+print("# %% ---------- Завдання 4.3 (потрібен інтернет) — requests ----------")
 # Напишіть функцію get_todo_title(todo_id), яка робить GET-запит на
 #   https://jsonplaceholder.typicode.com/todos/<todo_id>
 # (з timeout=10), перевіряє успіх через response.raise_for_status() і
