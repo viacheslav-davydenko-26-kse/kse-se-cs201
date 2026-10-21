@@ -5,8 +5,8 @@
 import random
 
 names = ["Olha", "Ivan", "Anna"]
-shuffled = random.shuffle(names)
-print(shuffled[0])
+random.shuffle(names)
+print(names[0])
 
 # Питання: яка помилка виникне і чому? Що саме повертає random.shuffle?
 # Запропонуйте два способи отримати перемішаний список.
@@ -15,7 +15,7 @@ print(shuffled[0])
 # %% ---------- Завдання 3.2 ----------
 from datetime import datetime
 
-d = datetime.strptime("17.05.2025", "%Y-%m-%d")
+d = datetime.strptime("17.05.2025", "%d.%m.%Y")
 print(d.strftime("%d.%m.%Y"))
 
 # Питання: що означає повідомлення про помилку? Який шаблон потрібно
@@ -27,7 +27,7 @@ print(d.strftime("%d.%m.%Y"))
 import pandas as pd
 
 df = pd.read_csv("class_scores.csv")
-print(df["Math"].mean())
+print(df["math"].mean())
 
 # Питання: яка помилка виникне і чому? Як швидко подивитися, які колонки
 # є в таблиці? Як виправити код (очікується число 77.4)?
