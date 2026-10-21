@@ -1,0 +1,13 @@
+date,category,product,quantity,price
+2024-03-01,Fruits,Apple,10,1.50
+2024-03-01,Dairy,Milk,5,2.20
+2024-03-02,Bakery,Bread,8,1.80
+2024-03-02,Fruits,Banana,12,1.20
+2024-03-03,Dairy,Cheese,3,7.50
+2024-03-03,Bakery,Croissant,6,2.50
+2024-03-04,Fruits,Apple,7,1.50
+2024-03-04,Dairy,Yogurt,9,1.10
+2024-03-05,Bakery,Bread,10,1.80
+2024-03-05,Fruits,Orange,4,2.00
+2024-03-06,Dairy,Milk,8,2.20
+2024-03-06,Bakery,Baguette,5,2.10
