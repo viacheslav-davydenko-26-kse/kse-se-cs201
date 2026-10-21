@@ -81,9 +81,13 @@ import requests
 
 
 def get_todo_title(todo_id):
-    # TODO
-    pass
-
+    url = f"https://jsonplaceholder.typicode.com/todos/{todo_id}"
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        return response.json()["title"]
+    except requests.exceptions.RequestException:
+        return None
 
 print(get_todo_title(1))
 print(get_todo_title(99999))
