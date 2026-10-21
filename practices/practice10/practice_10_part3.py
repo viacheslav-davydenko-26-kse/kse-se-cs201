@@ -15,7 +15,7 @@ print(names[0])
 # %% ---------- Завдання 3.2 ----------
 from datetime import datetime
 
-d = datetime.strptime("17.05.2025", "%d.%m.%Y")
+d = datetime.strptime("17-05-2025", "%d-%m-%Y")
 print(d.strftime("%d.%m.%Y"))
 
 # Питання: що означає повідомлення про помилку? Який шаблон потрібно
