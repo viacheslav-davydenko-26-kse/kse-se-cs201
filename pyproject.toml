@@ -1,0 +1,17 @@
+[project]
+name = "kse-se-cs201"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Viacheslav Davydenko", email = "viacheslav.davydenko.26@kse.org.ua" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+kse-se-cs201 = "kse_se_cs201:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
