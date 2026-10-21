@@ -58,7 +58,14 @@ print("# %% ---------- Завдання 4.2 (середнє) — власний 
 #   print(tt.longest_word("Hi, There!"))                  # There
 #   print(repr(tt.longest_word("")))                      # ''
 # Ваш код тут (імпорт і виклики):
+import text_tools as tt
 
+print(tt.word_count("Hello, world! Hello Python."))   # 4
+print(tt.word_count("...!!!"))                        # 0
+print(tt.word_count(""))                              # 0
+print(tt.longest_word("a bb ccc dd"))                 # ccc
+print(tt.longest_word("Hi, There!"))                  # There
+print(repr(tt.longest_word("")))                      # ''
 
 print("# %% ---------- Завдання 4.3 (потрібен інтернет) — requests ----------")
 # Напишіть функцію get_todo_title(todo_id), яка робить GET-запит на
