@@ -118,3 +118,11 @@ df = pd.DataFrame(rows)
 #   Best: Anna round 2 (10)
 #   2
 # Ваш код тут:
+print(df.shape)
+
+print(df.groupby("player")["score"].mean().round(2).to_dict())
+
+best_row = df.loc[df["score"].idxmax()]
+print(f"Best: {best_row["player"]} round {best_row["round"]} ({best_row["score"]})")
+
+print(df[df["score"] >= 10]["score"].count())
