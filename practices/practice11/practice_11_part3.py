@@ -21,7 +21,7 @@ import math
 def safe_sqrt(x):
     try:
         return math.sqrt(x)
-    except ZeroDivisionError:
+    except ValueError:
         return None
 
 
