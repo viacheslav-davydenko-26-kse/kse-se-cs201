@@ -36,7 +36,7 @@ print(safe_sqrt(-4))
 import pandas as pd
 
 df = pd.DataFrame({"team": ["Red", "Blue", "Red"], "score": [80, 50, 65]})
-print(df[df["score"] > 60 and df["team"] == "Red"])
+print(df[(df["score"] > 60) & (df["team"] == "Red")])
 
 # Питання: що означає повідомлення про помилку? Чим логічний оператор and
 # відрізняється від оператора & у pandas? Як виправити код, щоб отримати
