@@ -1,6 +1,6 @@
 # %% ========== БЛОК 4. САМОСТІЙНЕ НАПИСАННЯ КОДУ (15 хв) ==========
 
-# ---------- Завдання 4.1 (просте) — функції, random, винятки ----------
+print("# ---------- Завдання 4.1 (просте) — функції, random, винятки ----------")
 # Напишіть дві функції:
 #
 # а) roll_dice(n, seed) — задає random.seed(seed) і повертає список із n
@@ -15,13 +15,16 @@ import random
 
 
 def roll_dice(n, seed):
-    # TODO
-    pass
+    random.seed(seed) 
+    return [random.randint(1, 6) for _ in range(n)]
 
 
 def average(values):
-    # TODO
-    pass
+    try:
+        return round(sum(values) / len(values), 2)
+    except ZeroDivisionError:
+        return 0.0
+
 
 
 print(roll_dice(5, 1))                      # очікується: [2, 5, 1, 3, 1]
@@ -31,7 +34,7 @@ print(average([2, 3]))                      # очікується: 2.5
 print(average([]))                          # очікується: 0.0
 
 
-# %% ---------- Завдання 4.2 (середнє) — симуляції ----------
+print("# %% ---------- Завдання 4.2 (середнє) — симуляції ----------")
 # а) Напишіть функцію estimate_probability(trials, seed), яка оцінює
 #    ймовірність того, що сума двох кубиків дорівнює 7. Задайте random.seed(seed),
 #    виконайте trials експериментів (по два кидки random.randint(1, 6)) і
@@ -54,7 +57,7 @@ print(average([]))                          # очікується: 0.0
 import random
 
 
-# %% ---------- Завдання 4.3 (складніше) — pandas + matplotlib ----------
+print("# %% ---------- Завдання 4.3 (складніше) — pandas + matplotlib ----------")
 # Нижче симуляція гри: троє гравців роблять по 5 раундів, у кожному раунді
 # кидають два кубики, а score — сума очок. Дані вже створено — просто запустіть.
 import random
