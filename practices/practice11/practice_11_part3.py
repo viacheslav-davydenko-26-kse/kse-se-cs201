@@ -7,7 +7,7 @@ import random
 random.seed(1)
 items = ["a", "b", "c"]
 for _ in range(6):
-    print(items[random.randint(0, len(items))])
+    print(items[random.randint(0, len(items) - 1)])
 
 # Питання: яка помилка виникне і чому саме не одразу, а після кількох
 # успішних ітерацій? Чим random.randint відрізняється від range щодо межі
