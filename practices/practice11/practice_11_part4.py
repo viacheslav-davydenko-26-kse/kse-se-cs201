@@ -56,6 +56,36 @@ print("# %% ---------- Завдання 4.2 (середнє) — симуляц�
 # Ваш код тут:
 import random
 
+def estimate_probability(trials, seed):
+    random.seed(seed)
+
+    successes = 0
+    for _ in range(trials):
+        r1 = random.randint(1, 6)
+        r2 = random.randint(1, 6)
+        if r1 + r2 == 7:
+            successes += 1
+
+    try:
+        return round(successes / trials, 3)
+    except ZeroDivisionError:
+        return 0.0
+
+
+def random_walk(steps, seed):
+    random.seed(seed)
+    positions = [0]
+    for i in range(steps):
+        positions.append(positions[i] + random.choice([-1, 1]))
+    return positions
+
+
+print(estimate_probability(1000, 1))        # 0.168
+print(estimate_probability(100000, 1))      # 0.166
+print(estimate_probability(0, 1))           # 0.0
+print(random_walk(10, 3))                   # [0, -1, -2, -1, 0, -1, -2, -1, 0, -1, -2]
+print(len(random_walk(100, 5)))             # 101
+print(random_walk(1000, 3)[-1])             # 4
 
 print("# %% ---------- Завдання 4.3 (складніше) — pandas + matplotlib ----------")
 # Нижче симуляція гри: троє гравців роблять по 5 раундів, у кожному раунді
