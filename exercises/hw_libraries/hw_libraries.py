@@ -50,7 +50,7 @@ print("Ceil:", math.ceil(area))
 print("Floor:", math.floor(area))
 
 
-# %% ---------- Завдання 2 (просте) — math ----------
+print("# %% ---------- Завдання 2 (просте) — math ----------")
 # Виведіть за допомогою функцій модуля math:
 #   - факторіал числа 6;
 #   - найбільший спільний дільник чисел 48 і 36 (math.gcd);
@@ -68,6 +68,11 @@ print("Floor:", math.floor(area))
 import math
 
 # Ваш код тут:
+print("Factorial of 6:", math.factorial(6))
+print("GCD(48, 36):", math.gcd(48, 36))
+print("LCM(4, 6):", math.lcm(4, 6))
+print("Square root of 144:", math.sqrt(144))
+print("Power 2^10:", math.pow(2, 10))
 
 
 # %% ---------- Завдання 3 (просте) — random ----------
