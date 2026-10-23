@@ -26,7 +26,7 @@
 
 # %% ========== ПРОСТІ ЗАВДАННЯ (1–10) ==========
 
-# ---------- Завдання 1 (просте) — math ----------
+print("# ---------- Завдання 1 (просте) — math ----------")
 # Радіус кола дорівнює 5. Використайте math.pi і виведіть:
 #   - площу кола (pi * r^2), округлену до 2 знаків;
 #   - довжину кола (2 * pi * r), округлену до 2 знаків;
@@ -42,6 +42,12 @@ import math
 
 radius = 5
 # Ваш код тут:
+area = math.pi * (radius ** 2)
+circumference = 2 * math.pi * radius
+print("Area:", round(area, 2))
+print("Circumference:", round(circumference, 2))
+print("Ceil:", math.ceil(area))
+print("Floor:", math.floor(area))
 
 
 # %% ---------- Завдання 2 (просте) — math ----------
