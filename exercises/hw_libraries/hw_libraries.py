@@ -75,7 +75,7 @@ print("Square root of 144:", math.sqrt(144))
 print("Power 2^10:", math.pow(2, 10))
 
 
-# %% ---------- Завдання 3 (просте) — random ----------
+print("# %% ---------- Завдання 3 (просте) — random ----------")
 # Викличте random.seed(42). Створіть список із 5 випадкових цілих чисел
 # від 1 до 100 (random.randint) і виведіть сам список, його мінімум,
 # максимум і суму.
@@ -89,7 +89,12 @@ import random
 
 random.seed(42)
 # Ваш код тут:
+random_list = [random.randint(1, 100) for _ in range(5)]
 
+print("Numbers:", random_list)
+print("Min:", min(random_list))
+print("Max:", max(random_list))
+print("Sum:", sum(random_list))
 
 # %% ---------- Завдання 4 (просте) — random ----------
 # Викличте random.seed(7). Дано список імен. У такому порядку:
