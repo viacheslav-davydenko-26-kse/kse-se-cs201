@@ -121,7 +121,7 @@ print("Shuffled:", names_shuffled)
 print("Original:", names)
 print("Team:", random.sample(names, 2))
 
-# %% ---------- Завдання 5 (просте) — datetime ----------
+print("# %% ---------- Завдання 5 (просте) — datetime ----------")
 # Створіть дату 29 лютого 2024 року (datetime.date) і виведіть:
 #   - дату у форматі ISO (print(d));
 #   - назву дня тижня англійською (strftime("%A"));
@@ -136,6 +136,11 @@ print("Team:", random.sample(names, 2))
 from datetime import date
 
 # Ваш код тут:
+my_date = date(day=29, month=2, year=2024)
+print("ISO:", my_date)
+print("Weekday:", my_date.strftime("%A"))
+print("Formatted:", my_date.strftime("%d.%m.%Y"))
+print("Year/Month/Day:", my_date.year, my_date.month, my_date.day)
 
 
 # %% ---------- Завдання 6 (просте) — datetime ----------
