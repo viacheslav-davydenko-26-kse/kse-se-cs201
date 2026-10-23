@@ -191,7 +191,7 @@ print(hello("Olha"))
 print(my_utils.VERSION)
 
 
-# %% ---------- Завдання 8 (просте) — pandas ----------
+print("# %% ---------- Завдання 8 (просте) — pandas ----------")
 # Файл lib_scores.csv має колонки name, age, score.
 # Прочитайте його через pd.read_csv і виведіть:
 #   - розмір таблиці (df.shape);
@@ -212,6 +212,14 @@ print(my_utils.VERSION)
 import pandas as pd
 
 # Ваш код тут:
+FILE_PATH = "lib_scores.csv"
+df = pd.read_csv(FILE_PATH)
+
+print("Shape:", df.shape)
+print("Columns:", df.columns.to_list())
+print("Mean score:", df["score"].mean())
+print("Best student:", df.loc[df["score"].idxmax()]["name"])
+print(df.head(3))
 
 
 # %% ---------- Завдання 9 (просте) — matplotlib ----------
