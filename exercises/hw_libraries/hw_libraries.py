@@ -165,7 +165,7 @@ print("100 days after start:", start + timedelta(days=100))
 print("30 days before start:", start - timedelta(days=30))
 
 
-# %% ---------- Завдання 7 (просте) — власний модуль ----------
+print("# %% ---------- Завдання 7 (просте) — власний модуль ----------")
 # а) Створіть у цій же папці файл my_utils.py з таким вмістом:
 #      - константа VERSION = "1.0";
 #      - функція square(n)      — повертає n * n;
@@ -182,6 +182,13 @@ print("30 days before start:", start - timedelta(days=30))
 #   Hello, Olha!  <- hello("Olha")
 #   1.0           <- my_utils.VERSION
 # Ваш код тут (імпорт і виклики):
+import my_utils
+from my_utils import greet as hello
+
+print(my_utils.square(7))
+print(my_utils.is_even(10))
+print(hello("Olha"))
+print(my_utils.VERSION)
 
 
 # %% ---------- Завдання 8 (просте) — pandas ----------
