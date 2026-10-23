@@ -143,7 +143,7 @@ print("Formatted:", my_date.strftime("%d.%m.%Y"))
 print("Year/Month/Day:", my_date.year, my_date.month, my_date.day)
 
 
-# %% ---------- Завдання 6 (просте) — datetime ----------
+print("# %% ---------- Завдання 6 (просте) — datetime ----------")
 # Дано дати start = 1 вересня 2024 і end = 20 грудня 2024.
 # Виведіть:
 #   - скільки днів між ними (різниця дат дає timedelta, у неї є .days);
@@ -160,6 +160,9 @@ from datetime import date, timedelta
 start = date(2024, 9, 1)
 end = date(2024, 12, 20)
 # Ваш код тут:
+print("Days between:", (end - start).days)
+print("100 days after start:", start + timedelta(days=100))
+print("30 days before start:", start - timedelta(days=30))
 
 
 # %% ---------- Завдання 7 (просте) — власний модуль ----------
