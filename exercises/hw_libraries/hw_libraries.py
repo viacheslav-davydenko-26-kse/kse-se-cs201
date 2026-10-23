@@ -96,7 +96,7 @@ print("Min:", min(random_list))
 print("Max:", max(random_list))
 print("Sum:", sum(random_list))
 
-# %% ---------- Завдання 4 (просте) — random ----------
+print("# %% ---------- Завдання 4 (просте) — random ----------")
 # Викличте random.seed(7). Дано список імен. У такому порядку:
 #   1) виберіть переможця через random.choice;
 #   2) зробіть копію списку (names[:]) і перемішайте її через random.shuffle;
@@ -114,6 +114,12 @@ random.seed(7)
 names = ["Olha", "Ivan", "Anna", "Taras", "Sofia"]
 # Ваш код тут:
 
+print("Winner:", random.choice(names))
+names_shuffled = names[:]
+random.shuffle(names_shuffled)
+print("Shuffled:", names_shuffled)
+print("Original:", names)
+print("Team:", random.sample(names, 2))
 
 # %% ---------- Завдання 5 (просте) — datetime ----------
 # Створіть дату 29 лютого 2024 року (datetime.date) і виведіть:
