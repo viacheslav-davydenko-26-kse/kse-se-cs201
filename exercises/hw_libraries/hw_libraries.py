@@ -222,7 +222,7 @@ print("Best student:", df.loc[df["score"].idxmax()]["name"])
 print(df.head(3))
 
 
-# %% ---------- Завдання 9 (просте) — matplotlib ----------
+print("# %% ---------- Завдання 9 (просте) — matplotlib ----------")
 # Побудуйте лінійний графік: x = числа від 1 до 10, y = квадрати цих чисел.
 # Додайте маркери (marker="o"), заголовок "Squares", підписи осей ("n" та
 # "n squared") і сітку. Збережіть графік у файл squares.png, потім виведіть
@@ -236,7 +236,26 @@ import os
 import matplotlib.pyplot as plt
 
 # Ваш код тут:
+FILE_PATH = "squeares.png"
 
+plt.title("Squeares")
+plt.xlabel("n")
+plt.ylabel("n squared")
+plt.grid()
+
+plot_params = dict( 
+    marker="o"
+)
+
+domainx = list(range(1, 11))
+rangey = [x * x for x in domainx]
+
+plt.plot(domainx, rangey, **plot_params)
+
+plt.savefig(FILE_PATH)
+
+print("Saved:", FILE_PATH) 
+print("File exists:", os.path.exists(FILE_PATH)) 
 
 # %% ---------- Завдання 10 (просте) — requests ----------
 # Зробіть GET-запит на https://jsonplaceholder.typicode.com/todos/1
