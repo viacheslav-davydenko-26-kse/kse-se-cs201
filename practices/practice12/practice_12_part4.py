@@ -35,7 +35,7 @@ print(r.is_square())                  # очікується: False
 print(Rectangle(3, 3).is_square())    # очікується: True
 
 
-# %% ---------- Завдання 4.2 (складніше) — інкапсуляція і магічні методи ----------
+print("# %% ---------- Завдання 4.2 (складніше) — інкапсуляція і магічні методи ----------")
 # Напишіть клас ShoppingCart (кошик):
 #   - у конструкторі створіть ПРИВАТНИЙ словник __items (спочатку порожній):
 #     ключ — назва товару, значення — ціна;
@@ -53,9 +53,21 @@ print(Rectangle(3, 3).is_square())    # очікується: True
 #   Cart: 4 items, total 6.00
 #   private
 class ShoppingCart:
-    # TODO
-    pass
+    def __init__(self):
+        self.__items = {}
 
+    def add_item(self, name, price):
+        self.__items[name] = price
+
+    def total(self):
+        return round(sum(self.__items.values()), 2)
+
+    def __len__(self):
+        return len(self.__items)
+
+    def __str__(self):
+        return f"Cart: {self.__len__()} items, total {self.total()}"
+    
 
 cart = ShoppingCart()
 cart.add_item("apple", 0.5)
@@ -67,3 +79,7 @@ print(cart)
 cart.add_item("tea", 3.4)
 print(cart)
 # Перевірка приватності (допишіть try / except):
+try:
+    print(cart.__items)
+except AttributeError:
+    print("private")
