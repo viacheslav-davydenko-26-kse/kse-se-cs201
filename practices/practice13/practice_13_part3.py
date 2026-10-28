@@ -42,11 +42,14 @@ print(s.get_balance())
 # Запропонуйте виправлення, яке не відкриває атрибут для всіх.
 
 
-# %% ---------- Завдання 3.3 ----------
+print("# %% ---------- Завдання 3.3 ----------")
 class Runner:
     def __init__(self, name, score):
         self.name = name
         self.score = score
+
+    def __lt__(self, other):
+        return self.score < other.score
 
 
 runners = [Runner("Anna", 5), Runner("Ivan", 9), Runner("Olha", 7)]
