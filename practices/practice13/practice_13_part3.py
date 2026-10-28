@@ -18,7 +18,7 @@ print(cat.info())
 # хоча ми передали його в конструктор? Як виправити клас?
 
 
-# %% ---------- Завдання 3.2 ----------
+print("# %% ---------- Завдання 3.2 ----------")
 class Account:
     def __init__(self, balance):
         self.__balance = balance
@@ -26,11 +26,13 @@ class Account:
     def get_balance(self):
         return self.__balance
 
+    def deposite(self, amount):
+        if amount > 0:
+            self.__balance += amount
 
 class Savings(Account):
     def add_bonus(self):
-        self.__balance += 10
-
+        self.deposite(10)
 
 s = Savings(100)
 s.add_bonus()
