@@ -1,6 +1,6 @@
 # %% ========== БЛОК 4. САМОСТІЙНЕ НАПИСАННЯ КОДУ (15 хв) ==========
 
-# ---------- Завдання 4.1 (просте) — клас і магічний метод ----------
+print("# ---------- Завдання 4.1 (просте) — клас і магічний метод ----------")
 # Напишіть клас Rectangle:
 #   - конструктор __init__(self, width, height);
 #   - метод area() — повертає площу;
@@ -10,8 +10,21 @@
 #
 # Методи area, perimeter і is_square нічого не друкують, а повертають значення.
 class Rectangle:
-    # TODO
-    pass
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+    def is_square(self):
+        return self.width == self.height
+
+    def __str__(self):
+        return f"Rectangle {self.width}x{self.height}" 
 
 
 r = Rectangle(4, 5)
