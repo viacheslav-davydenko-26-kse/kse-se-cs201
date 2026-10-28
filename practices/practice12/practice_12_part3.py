@@ -1,7 +1,7 @@
 # %% ========== БЛОК 3. ДЕБАГІНГ (10 хв) ==========
 # У кожному фрагменті є помилка. Знайдіть її та поясніть, як виправити.
 
-# ---------- Завдання 3.1 ----------
+print("# ---------- Завдання 3.1 ----------")
 class Account:
     def __init__(self, balance):
         self.balance = balance
@@ -10,7 +10,7 @@ class Account:
         self.balance += amount
 
 
-acc = Account(100)
+acc = Account(self, 100)
 acc.deposit(50)
 print(acc.balance)
 
