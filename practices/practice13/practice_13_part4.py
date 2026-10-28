@@ -12,13 +12,20 @@
 #
 # Методи та функція нічого не друкують, а повертають значення.
 class Product:
-    # TODO
-    pass
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
 
+    def total(self):
+        return round(self.price * self.quantity, 2)
+
+    def __str__(self):
+        format = "{}: {} x {} = {}"
+        return format.format(self.name, self.quantity, self.price, self.total())
 
 def total_cost(products):
-    # TODO
-    pass
+    return round(sum(p.total() for p in products), 2)
 
 
 apple = Product("apple", 2.5, 3)
