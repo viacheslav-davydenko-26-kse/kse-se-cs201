@@ -6,11 +6,11 @@ class Account:
     def __init__(self, balance):
         self.balance = balance
 
-    def deposit(amount):
+    def deposit(self, amount):
         self.balance += amount
 
 
-acc = Account(self, 100)
+acc = Account(100)
 acc.deposit(50)
 print(acc.balance)
 
@@ -18,7 +18,7 @@ print(acc.balance)
 # Що ще потрібно виправити в тілі методу, щоб код запрацював?
 
 
-# %% ---------- Завдання 3.2 ----------
+print("# %% ---------- Завдання 3.2 ----------")
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -26,6 +26,7 @@ class Animal:
 
 class Dog(Animal):
     def __init__(self, name, breed):
+        super().__init__(name)
         self.breed = breed
 
 
