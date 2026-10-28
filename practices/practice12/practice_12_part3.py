@@ -38,14 +38,14 @@ print(dog.name)
 # Як виправити клас Dog?
 
 
-# %% ---------- Завдання 3.3 ----------
+print("# %% ---------- Завдання 3.3 ----------")
 class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
     def __str__(self):
-        print(f"Point({self.x}, {self.y})")
+        return f"Point({self.x}, {self.y})"
 
 
 point = Point(2, 3)
