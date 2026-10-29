@@ -275,7 +275,7 @@ import requests
 
 # %% ========== СЕРЕДНІ ЗАВДАННЯ (11–17) ==========
 
-# ---------- Завдання 11 (середнє) — math ----------
+print("# ---------- Завдання 11 (середнє) — math ----------")
 # а) Напишіть функцію solve_quadratic(a, b, c) для рівняння ax^2 + bx + c = 0.
 #    Використайте дискримінант і math.sqrt. Функція повертає кортеж коренів,
 #    округлених до 2 знаків, за зростанням:
@@ -300,13 +300,28 @@ import math
 
 
 def solve_quadratic(a, b, c):
-    # TODO
-    pass
+    if a == 0:
+        raise ValueError("a must not be 0")
+
+    delta = (b ** 2) - 4 * a * c
+
+    if delta > 0:
+        x1 = round((-b + math.sqrt(delta)) / (2 * a), 2)
+        x2 = round((-b - math.sqrt(delta)) / (2 * a), 2)
+
+        if x1 < x2:
+            return (x1, x2)
+        else:
+            return (x2, x1)
+    elif delta == 0:
+        x = round((-b) / (2 * a), 2)
+        return (x,)
+    else:
+        return ()
 
 
 def nearest_to_origin(points):
-    # TODO
-    pass
+    return min(points, key=lambda p: math.dist((0,0), p))
 
 
 print(solve_quadratic(1, -3, 2))
@@ -314,7 +329,10 @@ print(solve_quadratic(1, 2, 1))
 print(solve_quadratic(1, 0, 1))
 print(solve_quadratic(2, -4, -6))
 print(solve_quadratic(1, 1, -1))
-# TODO: викличте solve_quadratic(0, 2, 1) у try/except і виведіть "Error: ..."
+try:
+    solve_quadratic(0, 2, 1)
+except ValueError as e:
+    print("Error:", str(e))
 print(nearest_to_origin([(3, 4), (1, 1), (-2, 0)]))
 
 
