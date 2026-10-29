@@ -1,6 +1,6 @@
 # %% ========== БЛОК 4. САМОСТІЙНЕ НАПИСАННЯ КОДУ (15 хв) ==========
 
-# ---------- Завдання 4.1 (просте) — клас і функція ----------
+print("# ---------- Завдання 4.1 (просте) — клас і функція ----------")
 # Напишіть клас Product:
 #   - конструктор __init__(self, name, price, quantity);
 #   - метод total() — повертає price * quantity, округлене до 2 знаків;
@@ -37,7 +37,7 @@ print(total_cost([apple, milk]))      # очікується: 9.9
 print(total_cost([]))                 # очікується: 0
 
 
-# %% ---------- Завдання 4.2 (складніше) — клас, random і функція ----------
+print("# %% ---------- Завдання 4.2 (складніше) — клас, random і функція ----------")
 # Напишіть симуляцію простої гри.
 #
 # а) Клас Player:
@@ -65,10 +65,32 @@ import random
 
 
 class Player:
-    # TODO
-    pass
+    def __init__(self, name):
+        self.name = name
+        self.score = 0
+
+    def roll(self):
+        self.score += random.randint(1, 6)
+        return self.score
+    
+    def __str__(self):
+        return f"{self.name}: {self.score}"
 
 
 def play_game(names, rounds, seed):
-    # TODO
-    pass
+    random.seed(seed)
+
+    players = [Player(name) for name in names]
+   
+    for _ in range(rounds):
+        for player in players:
+            player.roll()
+
+    return max(players, key=lambda p: p.score)
+
+
+print(play_game(["Anna", "Ivan", "Olha"], 5, 1))     # Anna: 17
+print(play_game(["Anna", "Ivan", "Olha"], 5, 2))     # Olha: 21
+print(play_game(["A", "B"], 10, 7))                  # B: 27
+#   Повторний запуск із тим самим seed дає той самий результат:
+print(str(play_game(["Anna", "Ivan", "Olha"], 5, 1)) == "Anna: 17")   # True
