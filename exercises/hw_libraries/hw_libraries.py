@@ -336,7 +336,7 @@ except ValueError as e:
 print(nearest_to_origin([(3, 4), (1, 1), (-2, 0)]))
 
 
-# %% ---------- Завдання 12 (середнє) — random ----------
+print("# %% ---------- Завдання 12 (середнє) — random ----------")
 # Симуляція кидання кубика.
 # а) roll_dice(n) — повертає список із n результатів кидків (random.randint(1, 6)).
 # б) count_faces(rolls) — повертає словник {грань: скільки разів випала}
@@ -353,17 +353,24 @@ import random
 
 
 def roll_dice(n):
-    # TODO
-    pass
+    return [random.randint(1, 6) for _ in range(n)]
 
 
 def count_faces(rolls):
-    # TODO
-    pass
+    faces = {n: 0 for n in range(1, 7)}
+    for roll in rolls:
+        faces[roll] = faces.get(roll, 0) + 1
+    return faces
 
 
 random.seed(1)
 # Ваш код тут (кидки, підрахунок, вивід):
+ROLLS = 600
+faces = count_faces(roll_dice(ROLLS))
+print(faces)
+best = max(faces.keys(), key=lambda f: faces.get(f))
+print(f"Most frequent: {best} ({faces[best]} times)")
+print("Total:", ROLLS)
 
 
 # %% ---------- Завдання 13 (середнє) — datetime ----------
