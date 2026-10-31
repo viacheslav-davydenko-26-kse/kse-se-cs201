@@ -278,8 +278,6 @@ js = response.json()
 print(js["title"])
 print(js["completed"])
 
-exit()
-
 
 # %% ========== СЕРЕДНІ ЗАВДАННЯ (11–17) ==========
 
