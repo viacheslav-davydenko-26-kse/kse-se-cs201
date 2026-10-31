@@ -257,7 +257,7 @@ plt.savefig(FILE_PATH)
 print("Saved:", FILE_PATH) 
 print("File exists:", os.path.exists(FILE_PATH)) 
 
-# %% ---------- Завдання 10 (просте) — requests ----------
+print("# %% ---------- Завдання 10 (просте) — requests ----------")
 # Зробіть GET-запит на https://jsonplaceholder.typicode.com/todos/1
 # (параметр timeout=10). Виведіть:
 #   - код відповіді (response.status_code);
@@ -271,6 +271,14 @@ print("File exists:", os.path.exists(FILE_PATH))
 import requests
 
 # Ваш код тут:
+URL = "https://jsonplaceholder.typicode.com/todos/1"
+response = requests.get(URL, timeout=10)
+print(response.status_code)
+js = response.json()
+print(js["title"])
+print(js["completed"])
+
+exit()
 
 
 # %% ========== СЕРЕДНІ ЗАВДАННЯ (11–17) ==========
