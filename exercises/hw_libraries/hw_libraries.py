@@ -379,7 +379,7 @@ print(f"Most frequent: {best} ({faces[best]} times)")
 print("Total:", ROLLS)
 
 
-# %% ---------- Завдання 13 (середнє) — datetime ----------
+print("# %% ---------- Завдання 13 (середнє) — datetime ----------")
 # Дати подано рядками у форматі "дд.мм.рррр" (datetime.strptime(s, "%d.%m.%Y")).
 # а) days_until_birthday(birthday, today) — скільки днів залишилось до
 #    наступного дня народження. Якщо день народження сьогодні — 0.
@@ -399,13 +399,33 @@ from datetime import datetime, date, timedelta
 
 
 def days_until_birthday(birthday, today):
-    # TODO
-    pass
+    birthday_date = datetime.strptime(birthday, "%d.%m.%Y")
+    today_date = datetime.strptime(today, "%d.%m.%Y")
 
+    approach_birthday_date = datetime(today_date.year,
+                                      birthday_date.month,
+                                      birthday_date.day) 
 
+    if approach_birthday_date < today_date:
+        approach_birthday_date = datetime(today_date.year + 1,
+                                          birthday_date.month,
+                                          birthday_date.day) 
+
+    delta_days = (approach_birthday_date - today_date).days
+
+    return delta_days 
+
+# TODO
 def age_on(birthday, today):
-    # TODO
-    pass
+    birthday_date = datetime.strptime(birthday, "%d.%m.%Y")
+    today_date = datetime.strptime(today, "%d.%m.%Y")
+
+    full_years = today_date.year - birthday_date.year
+
+    if (today_date.month < birthday_date.month) and (today_date.day < birthday_date.day):
+         full_years -= 1
+
+    return full_years
 
 
 print(days_until_birthday("15.03.2005", "10.03.2024"))
@@ -414,6 +434,8 @@ print(days_until_birthday("15.03.2005", "16.03.2024"))
 print(days_until_birthday("01.01.2000", "31.12.2024"))
 print(age_on("15.03.2005", "14.03.2024"))
 print(age_on("15.03.2005", "15.03.2024"))
+
+exit()
 
 
 # %% ---------- Завдання 14 (середнє) — власний модуль і __name__ ----------
