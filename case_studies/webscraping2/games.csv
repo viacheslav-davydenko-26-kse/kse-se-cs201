@@ -1,0 +1,321 @@
+title,price,genre,genres_count,url
+The Legend of Zelda: Ocarina of Time,91.99,Action Adventure,2,https://sandbox.oxylabs.io/products/1
+Super Mario Galaxy,91.99,Action,3,https://sandbox.oxylabs.io/products/2
+Super Mario Galaxy 2,91.99,Action,3,https://sandbox.oxylabs.io/products/3
+Metroid Prime,89.99,Action,4,https://sandbox.oxylabs.io/products/4
+Super Mario Odyssey,89.99,Action,3,https://sandbox.oxylabs.io/products/5
+Halo: Combat Evolved,87.99,Action,4,https://sandbox.oxylabs.io/products/6
+The House in Fata Morgana - Dreams of the Revenants Edition -,83.99,Adventure,2,https://sandbox.oxylabs.io/products/7
+NFL 2K1,62.99,Sports,4,https://sandbox.oxylabs.io/products/8
+Uncharted 2: Among Thieves,88.99,Action Adventure,3,https://sandbox.oxylabs.io/products/9
+Tekken 3,91.99,Action,3,https://sandbox.oxylabs.io/products/10
+The Legend of Zelda: The Wind Waker,90.99,Action Adventure,2,https://sandbox.oxylabs.io/products/11
+Gran Turismo,86.99,Driving,3,https://sandbox.oxylabs.io/products/12
+Metal Gear Solid 2: Sons of Liberty,88.99,Action Adventure,2,https://sandbox.oxylabs.io/products/13
+Grand Theft Auto Double Pack,81.99,Miscellaneous,2,https://sandbox.oxylabs.io/products/14
+Baldur's Gate II: Shadows of Amn,91.99,Role-Playing,3,https://sandbox.oxylabs.io/products/15
+Tetris Effect: Connected,88.99,Puzzle,2,https://sandbox.oxylabs.io/products/16
+The Legend of Zelda Collector's Edition,89.99,Action Adventure,2,https://sandbox.oxylabs.io/products/17
+Gran Turismo 3: A-Spec,84.99,Driving,3,https://sandbox.oxylabs.io/products/18
+The Legend of Zelda: A Link to the Past,90.99,Action Adventure,2,https://sandbox.oxylabs.io/products/19
+The Legend of Zelda: Majora's Mask,91.99,Action Adventure,2,https://sandbox.oxylabs.io/products/20
+The Last of Us,92.99,Modern,4,https://sandbox.oxylabs.io/products/21
+Persona 5 Royal,84.99,Role-Playing,2,https://sandbox.oxylabs.io/products/22
+The Last of Us Remastered,92.99,Action Adventure,3,https://sandbox.oxylabs.io/products/23
+The Legend of Zelda: Ocarina of Time 3D,90.99,Miscellaneous,5,https://sandbox.oxylabs.io/products/24
+Chrono Cross,88.99,Role-Playing,2,https://sandbox.oxylabs.io/products/25
+Gears of War,84.99,Action,5,https://sandbox.oxylabs.io/products/26
+Sid Meier's Civilization II,88.99,Strategy,5,https://sandbox.oxylabs.io/products/27
+Halo 3,81.99,Action,5,https://sandbox.oxylabs.io/products/28
+Ninja Gaiden Black,88.99,Action Adventure,2,https://sandbox.oxylabs.io/products/29
+Super Mario Advance 4: Super Mario Bros. 3,89.99,Action,3,https://sandbox.oxylabs.io/products/30
+Jet Grind Radio,83.99,Action,3,https://sandbox.oxylabs.io/products/31
+Grim Fandango,91.99,Adventure,5,https://sandbox.oxylabs.io/products/32
+Resident Evil Code: Veronica,85.99,Action Adventure,2,https://sandbox.oxylabs.io/products/33
+Diablo,87.99,Role-Playing,2,https://sandbox.oxylabs.io/products/34
+Metal Gear Solid 3: Subsistence,91.99,Action Adventure,2,https://sandbox.oxylabs.io/products/35
+Metal Gear Solid 4: Guns of the Patriots,88.99,Action Adventure,3,https://sandbox.oxylabs.io/products/36
+Sid Meier's Civilization IV,82.99,Strategy,4,https://sandbox.oxylabs.io/products/37
+Virtua Fighter 4,81.99,Action,3,https://sandbox.oxylabs.io/products/38
+Super Mario 64,91.99,Action,3,https://sandbox.oxylabs.io/products/39
+Super Smash Bros. Brawl,88.99,Action,4,https://sandbox.oxylabs.io/products/40
+Company of Heroes,87.99,Strategy,4,https://sandbox.oxylabs.io/products/41
+Gran Turismo 2,90.99,Driving,3,https://sandbox.oxylabs.io/products/42
+The Last of Us Part II,57.99,General,3,https://sandbox.oxylabs.io/products/43
+Half-Life: Alyx,92.99,Action,4,https://sandbox.oxylabs.io/products/44
+Divinity: Original Sin II,88.99,Action RPG,3,https://sandbox.oxylabs.io/products/45
+Unreal Tournament 2004,88.99,Action,5,https://sandbox.oxylabs.io/products/46
+God of War II,90.99,Action Adventure,2,https://sandbox.oxylabs.io/products/47
+Super Mario 3D World,89.99,Platformer,3,https://sandbox.oxylabs.io/products/48
+Starcraft II: Wings of Liberty,83.99,Strategy,4,https://sandbox.oxylabs.io/products/49
+Minecraft,80.99,Action Adventure,6,https://sandbox.oxylabs.io/products/50
+Persona 4 Golden,86.99,Role-Playing,3,https://sandbox.oxylabs.io/products/51
+Persona 5,87.99,Role-Playing,2,https://sandbox.oxylabs.io/products/52
+Quake III Arena,83.99,Action,4,https://sandbox.oxylabs.io/products/53
+Homeworld,88.99,Strategy,5,https://sandbox.oxylabs.io/products/54
+Gears of War 2,79.99,Action,5,https://sandbox.oxylabs.io/products/55
+World Soccer Winning Eleven 6 International,84.99,Sports,4,https://sandbox.oxylabs.io/products/56
+Skies of Arcadia,88.99,Role-Playing,2,https://sandbox.oxylabs.io/products/57
+The Legend of Zelda: Skyward Sword,81.99,Fantasy,4,https://sandbox.oxylabs.io/products/58
+Mario Kart Super Circuit,78.99,Driving,3,https://sandbox.oxylabs.io/products/59
+Test Drive Le Mans,83.99,Driving,3,https://sandbox.oxylabs.io/products/60
+NBA 2K1,72.99,Sports,4,https://sandbox.oxylabs.io/products/61
+Virtua Fighter 4: Evolution,87.99,Action,3,https://sandbox.oxylabs.io/products/62
+Uncharted 4: A Thief's End,88.99,General,4,https://sandbox.oxylabs.io/products/63
+Super Smash Bros. Ultimate,86.99,Action,3,https://sandbox.oxylabs.io/products/64
+Paper Mario,90.99,Role-Playing,2,https://sandbox.oxylabs.io/products/65
+Wipeout XL,86.99,Driving,3,https://sandbox.oxylabs.io/products/66
+World of Warcraft,74.99,Role-Playing,4,https://sandbox.oxylabs.io/products/67
+Flipnote Studio,75.99,Miscellaneous,3,https://sandbox.oxylabs.io/products/68
+God of War III,88.99,Action Adventure,3,https://sandbox.oxylabs.io/products/69
+NHL 2002,83.99,Sports,4,https://sandbox.oxylabs.io/products/70
+Uncharted 3: Drake's Deception,84.99,Action Adventure,3,https://sandbox.oxylabs.io/products/71
+Bloodborne,88.99,Fantasy,5,https://sandbox.oxylabs.io/products/72
+Eternal Darkness: Sanity's Requiem,87.99,Action Adventure,2,https://sandbox.oxylabs.io/products/73
+Warcraft III: Reign of Chaos,92.99,Strategy,4,https://sandbox.oxylabs.io/products/74
+Sid Meier's Gettysburg!,74.99,Strategy,4,https://sandbox.oxylabs.io/products/75
+Forza Motorsport,76.99,Driving,3,https://sandbox.oxylabs.io/products/76
+Advance Wars,89.99,Strategy,3,https://sandbox.oxylabs.io/products/77
+Vagrant Story,90.99,Role-Playing,2,https://sandbox.oxylabs.io/products/78
+Team Fortress 2,90.99,Action,5,https://sandbox.oxylabs.io/products/79
+System Shock 2,91.99,Action Adventure,3,https://sandbox.oxylabs.io/products/80
+Final Fantasy XII,76.99,Role-Playing,2,https://sandbox.oxylabs.io/products/81
+Super Mario World: Super Mario Advance 2,90.99,Action,3,https://sandbox.oxylabs.io/products/82
+Super Smash Bros. Melee,91.99,Action,3,https://sandbox.oxylabs.io/products/83
+Rome: Total War,90.99,Strategy,4,https://sandbox.oxylabs.io/products/84
+Forza Motorsport 3,81.99,Driving,5,https://sandbox.oxylabs.io/products/85
+Super Mario Sunshine,84.99,Action,3,https://sandbox.oxylabs.io/products/86
+Tony Hawk's Pro Skater,88.99,Sports,3,https://sandbox.oxylabs.io/products/87
+Thief: The Dark Project,90.99,Action Adventure,3,https://sandbox.oxylabs.io/products/88
+Fire Emblem: Awakening,90.99,Strategy,4,https://sandbox.oxylabs.io/products/89
+Age of Empires II: The Age of Kings,91.99,Strategy,4,https://sandbox.oxylabs.io/products/90
+Final Fantasy X,89.99,Role-Playing,2,https://sandbox.oxylabs.io/products/91
+Unreal Tournament (1999),90.99,Action,5,https://sandbox.oxylabs.io/products/92
+Sid Meier's Alpha Centauri,88.99,Strategy,4,https://sandbox.oxylabs.io/products/93
+Wave Race 64,83.99,Driving,3,https://sandbox.oxylabs.io/products/94
+Galactic Civilizations II: Twilight of the Arnor,82.99,Strategy,4,https://sandbox.oxylabs.io/products/95
+Super Smash Bros. for Wii U,89.99,Action,4,https://sandbox.oxylabs.io/products/96
+Chrono Trigger,91.99,Role-Playing,3,https://sandbox.oxylabs.io/products/97
+Xenoblade Chronicles,91.99,Role-Playing,3,https://sandbox.oxylabs.io/products/98
+Conker's Bad Fur Day,89.99,Action,3,https://sandbox.oxylabs.io/products/99
+Mario Kart 8 Deluxe,86.99,Other,4,https://sandbox.oxylabs.io/products/100
+The ICO & Shadow of the Colossus Collection,87.99,Miscellaneous,4,https://sandbox.oxylabs.io/products/101
+Metroid Prime 2: Echoes,89.99,Action,4,https://sandbox.oxylabs.io/products/102
+Out of the Park Baseball 17,33.99,Sports,4,https://sandbox.oxylabs.io/products/103
+Metroid Fusion,91.99,Action Adventure,2,https://sandbox.oxylabs.io/products/104
+Final Fantasy VI Advance,87.99,Role-Playing,2,https://sandbox.oxylabs.io/products/105
+Dishonored,85.99,Action Adventure,3,https://sandbox.oxylabs.io/products/106
+Medal of Honor: Allied Assault,85.99,Action,5,https://sandbox.oxylabs.io/products/107
+Myth: The Fallen Lords,85.99,Strategy,4,https://sandbox.oxylabs.io/products/108
+LittleBigPlanet 2,86.99,Action,4,https://sandbox.oxylabs.io/products/109
+Psychonauts 2,55.99,Action,6,https://sandbox.oxylabs.io/products/110
+Guitar Hero,86.99,Miscellaneous,3,https://sandbox.oxylabs.io/products/111
+World of Warcraft: Wrath of the Lich King,79.99,Role-Playing,4,https://sandbox.oxylabs.io/products/112
+Metroid Prime Trilogy,90.99,Action,6,https://sandbox.oxylabs.io/products/113
+F1 Challenge '99-'02,76.99,Driving,5,https://sandbox.oxylabs.io/products/114
+Baldur's Gate,89.99,Role-Playing,3,https://sandbox.oxylabs.io/products/115
+Klonoa 2: Lunatea's Veil,86.99,Action,3,https://sandbox.oxylabs.io/products/116
+IL-2 Sturmovik,87.99,Simulation,4,https://sandbox.oxylabs.io/products/117
+Mario Tennis,88.99,Sports,3,https://sandbox.oxylabs.io/products/118
+FreeSpace 2,87.99,Simulation,5,https://sandbox.oxylabs.io/products/119
+Colony Wars,83.99,Simulation,3,https://sandbox.oxylabs.io/products/120
+Ratchet & Clank: Up Your Arsenal,91.99,Action,3,https://sandbox.oxylabs.io/products/121
+Resident Evil (2002),92.99,Action Adventure,2,https://sandbox.oxylabs.io/products/122
+Metal Gear Solid 3: Snake Eater,92.99,Action Adventure,2,https://sandbox.oxylabs.io/products/123
+Twisted Metal: Black,84.99,Driving,2,https://sandbox.oxylabs.io/products/124
+Spyro: Year of the Dragon,89.99,Action,3,https://sandbox.oxylabs.io/products/125
+Tomb Raider,84.99,Action Adventure,2,https://sandbox.oxylabs.io/products/126
+Factorio,91.99,Strategy,3,https://sandbox.oxylabs.io/products/127
+Resident Evil 4: Wii Edition,89.99,Action Adventure,3,https://sandbox.oxylabs.io/products/128
+Peggle,73.99,Miscellaneous,3,https://sandbox.oxylabs.io/products/129
+The Legend of Zelda: Ocarina of Time / Master Quest,89.99,Action Adventure,2,https://sandbox.oxylabs.io/products/130
+Sonic Mania Plus,81.99,Action,3,https://sandbox.oxylabs.io/products/131
+Kentucky Route Zero - Act III,66.99,Adventure,2,https://sandbox.oxylabs.io/products/132
+Crysis,81.99,Action,5,https://sandbox.oxylabs.io/products/133
+Ninja Gaiden,88.99,Action Adventure,2,https://sandbox.oxylabs.io/products/134
+God of War: Chains of Olympus,86.99,Action Adventure,3,https://sandbox.oxylabs.io/products/135
+DOA2: Hardcore,81.99,Action,3,https://sandbox.oxylabs.io/products/136
+World of Warcraft: The Burning Crusade,65.99,Role-Playing,4,https://sandbox.oxylabs.io/products/137
+Yoshi's Island: Super Mario Advance 3,89.99,Action,3,https://sandbox.oxylabs.io/products/138
+The Longest Journey,87.99,Adventure,4,https://sandbox.oxylabs.io/products/139
+Star Wars Jedi Knight: Dark Forces II,86.99,Action,5,https://sandbox.oxylabs.io/products/140
+Halo: Reach,84.99,Action,5,https://sandbox.oxylabs.io/products/141
+Galactic Civilizations II: Dark Avatar,78.99,Strategy,4,https://sandbox.oxylabs.io/products/142
+Mass Effect,87.99,Role-Playing,5,https://sandbox.oxylabs.io/products/143
+Crusader Kings III,84.99,Strategy,3,https://sandbox.oxylabs.io/products/144
+Forza Motorsport 4,83.99,Driving,5,https://sandbox.oxylabs.io/products/145
+Battlefield 2,84.99,Action,5,https://sandbox.oxylabs.io/products/146
+Planescape: Torment,92.99,Role-Playing,4,https://sandbox.oxylabs.io/products/147
+Gears of War 3,81.99,Action,5,https://sandbox.oxylabs.io/products/148
+Killzone 2,81.99,Action,5,https://sandbox.oxylabs.io/products/149
+Neverwinter Nights,82.99,Role-Playing,3,https://sandbox.oxylabs.io/products/150
+Castlevania: Aria of Sorrow,89.99,Action,3,https://sandbox.oxylabs.io/products/151
+No One Lives Forever 2: A Spy in H.A.R.M.'s Way,86.99,Action,7,https://sandbox.oxylabs.io/products/152
+Legacy of Kain: Soul Reaver,90.99,Action Adventure,2,https://sandbox.oxylabs.io/products/153
+Dragon Age: Origins,88.99,Role-Playing,3,https://sandbox.oxylabs.io/products/154
+Golden Sun,90.99,Role-Playing,2,https://sandbox.oxylabs.io/products/155
+Disco Elysium,84.99,Role-Playing,2,https://sandbox.oxylabs.io/products/156
+SteamWorld Heist: Ultimate Edition,83.99,Strategy,3,https://sandbox.oxylabs.io/products/157
+The Legend of Zelda: A Link Between Worlds,90.99,Action RPG,5,https://sandbox.oxylabs.io/products/158
+NieR: Automata - Game of the YoRHa Edition,87.99,Role-Playing,2,https://sandbox.oxylabs.io/products/159
+Castlevania: Circle of the Moon,83.99,Action,3,https://sandbox.oxylabs.io/products/160
+Shovel Knight: Treasure Trove,82.99,Action,3,https://sandbox.oxylabs.io/products/161
+flower,73.99,General,2,https://sandbox.oxylabs.io/products/162
+Mario Kart DS,87.99,Driving,5,https://sandbox.oxylabs.io/products/163
+Call of Duty,84.99,Action,7,https://sandbox.oxylabs.io/products/164
+Mario Golf,80.99,Sports,4,https://sandbox.oxylabs.io/products/165
+Crash Bandicoot 3: Warped,90.99,Action,3,https://sandbox.oxylabs.io/products/166
+Project Gotham Racing 2,87.99,Driving,3,https://sandbox.oxylabs.io/products/167
+Animal Crossing: New Horizons,55.99,Simulation,3,https://sandbox.oxylabs.io/products/168
+World of Warcraft: Cataclysm,58.99,Role-Playing,4,https://sandbox.oxylabs.io/products/169
+Rayman 2: The Great Escape,88.99,Action,3,https://sandbox.oxylabs.io/products/170
+Diablo III: Ultimate Evil Edition,79.99,Action RPG,2,https://sandbox.oxylabs.io/products/171
+ICO,88.99,Action Adventure,2,https://sandbox.oxylabs.io/products/172
+Mario & Luigi: Superstar Saga,89.99,Role-Playing,2,https://sandbox.oxylabs.io/products/173
+Ape Escape,84.99,Action,3,https://sandbox.oxylabs.io/products/174
+Syphon Filter,88.99,Action,4,https://sandbox.oxylabs.io/products/175
+Mario & Luigi: Bowser's Inside Story,88.99,Role-Playing,4,https://sandbox.oxylabs.io/products/176
+Trials Evolution,80.99,Driving,6,https://sandbox.oxylabs.io/products/177
+Grand Theft Auto IV: The Lost and Damned,80.99,Action Adventure,3,https://sandbox.oxylabs.io/products/178
+Ratchet & Clank: Going Commando,89.99,Action,3,https://sandbox.oxylabs.io/products/179
+NBA Street Vol. 2,87.99,Sports,4,https://sandbox.oxylabs.io/products/180
+Tennis 2K2,79.99,Sports,3,https://sandbox.oxylabs.io/products/181
+Black & White,77.99,Strategy,4,https://sandbox.oxylabs.io/products/182
+The Legend of Zelda: The Wind Waker HD,90.99,Action Adventure,3,https://sandbox.oxylabs.io/products/183
+Portal,92.99,Action,5,https://sandbox.oxylabs.io/products/184
+Tetris Effect,66.99,Puzzle,2,https://sandbox.oxylabs.io/products/185
+The Legend of Zelda: Phantom Hourglass,80.99,Action Adventure,3,https://sandbox.oxylabs.io/products/186
+Dance Dance Revolution,84.99,Miscellaneous,3,https://sandbox.oxylabs.io/products/187
+Advance Wars: Dual Strike,88.99,Strategy,4,https://sandbox.oxylabs.io/products/188
+NieR: Automata - Become as Gods Edition,90.99,Role-Playing,2,https://sandbox.oxylabs.io/products/189
+Jak and Daxter: The Precursor Legacy,88.99,Action,3,https://sandbox.oxylabs.io/products/190
+Star Wars Rogue Leader: Rogue Squadron II,86.99,Simulation,3,https://sandbox.oxylabs.io/products/191
+Stephen's Sausage Roll,55.99,Puzzle,3,https://sandbox.oxylabs.io/products/192
+NCAA Football 2002,84.99,Sports,4,https://sandbox.oxylabs.io/products/193
+Deus Ex,92.99,Action Adventure,3,https://sandbox.oxylabs.io/products/194
+Donkey Kong 64,86.99,Action,3,https://sandbox.oxylabs.io/products/195
+Panzer Dragoon Orta,84.99,Action,3,https://sandbox.oxylabs.io/products/196
+Portal: Still Alive,86.99,Action,5,https://sandbox.oxylabs.io/products/197
+Half-Life 2: Episode Two,92.99,Action,5,https://sandbox.oxylabs.io/products/198
+The Chronicles of Riddick: Escape From Butcher Bay - Developer's Cut,86.99,Action,5,https://sandbox.oxylabs.io/products/199
+Shin Megami Tensei: Persona 4,77.99,Role-Playing,2,https://sandbox.oxylabs.io/products/200
+Hollow Knight,90.99,Action Adventure,2,https://sandbox.oxylabs.io/products/201
+Blast Corps,83.99,Action,2,https://sandbox.oxylabs.io/products/202
+Sid Meier's Civilization III,84.99,Strategy,4,https://sandbox.oxylabs.io/products/203
+NFL 2K2,71.99,Sports,4,https://sandbox.oxylabs.io/products/204
+WWF SmackDown! 2: Know Your Role,84.99,Action,3,https://sandbox.oxylabs.io/products/205
+Silent Hunter III,78.99,Simulation,4,https://sandbox.oxylabs.io/products/206
+Dead Space 2,86.99,Action,5,https://sandbox.oxylabs.io/products/207
+Pikmin 2,90.99,Strategy,3,https://sandbox.oxylabs.io/products/208
+Geometry Wars: Retro Evolved 2,83.99,Action,5,https://sandbox.oxylabs.io/products/209
+Sid Meier's Civilization V,80.99,Strategy,4,https://sandbox.oxylabs.io/products/210
+Super Mario 3D Land,84.99,Action,3,https://sandbox.oxylabs.io/products/211
+Mario Kart 8 DLC Pack 2,89.99,Driving,5,https://sandbox.oxylabs.io/products/212
+Falcon 4.0: Allied Force,77.99,Simulation,4,https://sandbox.oxylabs.io/products/213
+Deus Ex: Human Revolution,85.99,Action,6,https://sandbox.oxylabs.io/products/214
+Metroid Prime 3: Corruption,88.99,Action,5,https://sandbox.oxylabs.io/products/215
+Flight Simulator 2002,73.99,Simulation,4,https://sandbox.oxylabs.io/products/216
+Banjo-Tooie,88.99,Action,3,https://sandbox.oxylabs.io/products/217
+Uncharted: Drake's Fortune,79.99,Action Adventure,3,https://sandbox.oxylabs.io/products/218
+Warcraft III: The Frozen Throne,92.99,Strategy,4,https://sandbox.oxylabs.io/products/219
+Tactics Ogre: The Knight of Lodis,88.99,Strategy,3,https://sandbox.oxylabs.io/products/220
+Starcraft,91.99,Strategy,4,https://sandbox.oxylabs.io/products/221
+The Last of Us: Left Behind,47.99,Action Adventure,3,https://sandbox.oxylabs.io/products/222
+Star Wars Pinball: Balance of the Force,61.99,Action,4,https://sandbox.oxylabs.io/products/223
+The Secret of Monkey Island: Special Edition,84.99,Adventure,3,https://sandbox.oxylabs.io/products/224
+Project Gotham Racing 3,79.99,Driving,5,https://sandbox.oxylabs.io/products/225
+The World Ends with You,87.99,Role-Playing,2,https://sandbox.oxylabs.io/products/226
+Dishonored 2,80.99,Action Adventure,2,https://sandbox.oxylabs.io/products/227
+Injustice 2: Legendary Edition,77.99,Action,3,https://sandbox.oxylabs.io/products/228
+Divinity: Original Sin Enhanced Edition,80.99,Role-Playing,3,https://sandbox.oxylabs.io/products/229
+Minecraft: Xbox One Edition,73.99,Action Adventure,6,https://sandbox.oxylabs.io/products/230
+JSRF: Jet Set Radio Future,83.99,Action,3,https://sandbox.oxylabs.io/products/231
+Red Faction,79.99,Action,4,https://sandbox.oxylabs.io/products/232
+Myth II: Soulblighter,88.99,Strategy,4,https://sandbox.oxylabs.io/products/233
+Ninja Gaiden Sigma,76.99,Action Adventure,3,https://sandbox.oxylabs.io/products/234
+Fire Emblem Fates: Special Edition,80.99,Strategy,3,https://sandbox.oxylabs.io/products/235
+Pinball FX 2,82.99,Action,4,https://sandbox.oxylabs.io/products/236
+Final Fantasy Tactics: The War of the Lions,91.99,Strategy,4,https://sandbox.oxylabs.io/products/237
+NHL 11,77.99,Sports,5,https://sandbox.oxylabs.io/products/238
+Wario Land 4,87.99,Action,3,https://sandbox.oxylabs.io/products/239
+Metroid Dread,88.99,Action Adventure,2,https://sandbox.oxylabs.io/products/240
+The Elder Scrolls III: Morrowind Game of the Year Edition,86.99,Role-Playing,2,https://sandbox.oxylabs.io/products/241
+WarioWare: Twisted!,87.99,Miscellaneous,3,https://sandbox.oxylabs.io/products/242
+Halo: The Master Chief Collection - Halo 3,79.99,Action,4,https://sandbox.oxylabs.io/products/243
+Pokemon Y,75.99,Role-Playing,3,https://sandbox.oxylabs.io/products/244
+Return to Castle Wolfenstein,87.99,Action,5,https://sandbox.oxylabs.io/products/245
+Ratchet & Clank: Rift Apart,87.99,Action,3,https://sandbox.oxylabs.io/products/246
+NBA Street,60.99,Sports,4,https://sandbox.oxylabs.io/products/247
+Shogo: Mobile Armor Division,84.99,Action,5,https://sandbox.oxylabs.io/products/248
+Thirty Flights of Loving,50.99,Adventure,4,https://sandbox.oxylabs.io/products/249
+Hearthstone: Heroes of Warcraft,58.99,Card Battle,4,https://sandbox.oxylabs.io/products/250
+Unity of Command II,77.99,Strategy,3,https://sandbox.oxylabs.io/products/251
+Ghost of Tsushima: Director's Cut,67.99,Action Adventure,2,https://sandbox.oxylabs.io/products/252
+Grand Theft Auto: Liberty City Stories,77.99,Action Adventure,3,https://sandbox.oxylabs.io/products/253
+Medieval II: Total War,90.99,Strategy,4,https://sandbox.oxylabs.io/products/254
+Super Mario Maker 2,85.99,Action,3,https://sandbox.oxylabs.io/products/255
+Sly 2: Band of Thieves,90.99,Action,3,https://sandbox.oxylabs.io/products/256
+Doom 3,81.99,Action,4,https://sandbox.oxylabs.io/products/257
+Tekken: Dark Resurrection,86.99,Action,3,https://sandbox.oxylabs.io/products/258
+The Stanley Parable,80.99,Action,6,https://sandbox.oxylabs.io/products/259
+Slay the Spire,69.99,Strategy,3,https://sandbox.oxylabs.io/products/260
+Guacamelee! Gold Edition,75.99,Action,3,https://sandbox.oxylabs.io/products/261
+Counter-Strike: Source,89.99,Action,5,https://sandbox.oxylabs.io/products/262
+Fire Emblem,90.99,Strategy,3,https://sandbox.oxylabs.io/products/263
+Fire Emblem Fates: Revelation,73.99,Strategy,3,https://sandbox.oxylabs.io/products/264
+Need for Speed: High Stakes,85.99,Driving,3,https://sandbox.oxylabs.io/products/265
+Street Fighter III: Third Strike Online Edition,72.99,Action,3,https://sandbox.oxylabs.io/products/266
+Professor Layton and the Unwound Future,87.99,Miscellaneous,3,https://sandbox.oxylabs.io/products/267
+We Love Katamari,88.99,Action,2,https://sandbox.oxylabs.io/products/268
+Worldwide Soccer Manager 2008,73.99,Sports,5,https://sandbox.oxylabs.io/products/269
+Dance Central 2,81.99,Action,4,https://sandbox.oxylabs.io/products/270
+Sly Cooper and the Thievius Raccoonus,85.99,Action,3,https://sandbox.oxylabs.io/products/271
+IL-2 Sturmovik: Forgotten Battles,80.99,Simulation,4,https://sandbox.oxylabs.io/products/272
+DiRT 3,70.99,Driving,5,https://sandbox.oxylabs.io/products/273
+Minecraft: PlayStation 3 Edition,68.99,Fantasy,6,https://sandbox.oxylabs.io/products/274
+Devotion,78.99,Action Adventure,2,https://sandbox.oxylabs.io/products/275
+The Legend of Zelda: Four Swords Adventures,75.99,Action Adventure,2,https://sandbox.oxylabs.io/products/276
+Joe Danger,77.99,Driving,4,https://sandbox.oxylabs.io/products/277
+Tales of Symphonia,90.99,Role-Playing,2,https://sandbox.oxylabs.io/products/278
+Unreal Tournament 2003,78.99,Action,5,https://sandbox.oxylabs.io/products/279
+Age of Wonders II: The Wizard's Throne,85.99,Strategy,4,https://sandbox.oxylabs.io/products/280
+Daytona USA,85.99,Driving,3,https://sandbox.oxylabs.io/products/281
+Links 2001,63.99,Sports,5,https://sandbox.oxylabs.io/products/282
+EverQuest: The Ruins of Kunark,85.99,Role-Playing,4,https://sandbox.oxylabs.io/products/283
+Full Throttle,86.99,Adventure,2,https://sandbox.oxylabs.io/products/284
+Katamari Damacy,88.99,Action,2,https://sandbox.oxylabs.io/products/285
+The Lord of the Rings Online: Shadows of Angmar,80.99,Role-Playing,4,https://sandbox.oxylabs.io/products/286
+Grand Theft Auto: Vice City Stories,82.99,Action Adventure,3,https://sandbox.oxylabs.io/products/287
+Pony Island,74.99,Puzzle,2,https://sandbox.oxylabs.io/products/288
+"Warhammer 40,000: Dawn of War",87.99,Strategy,4,https://sandbox.oxylabs.io/products/289
+MLB The Show 19,76.99,Sports,4,https://sandbox.oxylabs.io/products/290
+Tales From Space: Mutant Blobs Attack,83.99,Action,3,https://sandbox.oxylabs.io/products/291
+Max Payne 3,79.99,Action,5,https://sandbox.oxylabs.io/products/292
+Skate,84.99,Sports,5,https://sandbox.oxylabs.io/products/293
+Warhammer Online: Age of Reckoning,79.99,Role-Playing,4,https://sandbox.oxylabs.io/products/294
+NHL 12,71.99,Sports,5,https://sandbox.oxylabs.io/products/295
+Dead Space (2008),82.99,Action,5,https://sandbox.oxylabs.io/products/296
+Advance Wars: Days of Ruin,87.99,Strategy,4,https://sandbox.oxylabs.io/products/297
+The Elder Scrolls IV - Knights of the Nine,75.99,Role-Playing,3,https://sandbox.oxylabs.io/products/298
+Final Fantasy IV Pixel Remaster,73.99,Role-Playing,2,https://sandbox.oxylabs.io/products/299
+Forza Horizon 2,83.99,Driving,5,https://sandbox.oxylabs.io/products/300
+Monster Train,83.99,Strategy,3,https://sandbox.oxylabs.io/products/301
+Crypt of the NecroDancer: Nintendo Switch Edition,72.99,Role-Playing,3,https://sandbox.oxylabs.io/products/302
+Moto Racer Advance,86.99,Driving,4,https://sandbox.oxylabs.io/products/303
+Command & Conquer: Red Alert 2 - Yuri's Revenge,89.99,Strategy,4,https://sandbox.oxylabs.io/products/304
+Europa Universalis,76.99,Strategy,2,https://sandbox.oxylabs.io/products/305
+IL-2 Sturmovik: 1946,87.99,Simulation,4,https://sandbox.oxylabs.io/products/306
+Luigi's Mansion 3,85.99,Action Adventure,2,https://sandbox.oxylabs.io/products/307
+Dance Central 3,79.99,Dancing,4,https://sandbox.oxylabs.io/products/308
+Shatter,76.99,Action,2,https://sandbox.oxylabs.io/products/309
+Luigi's Mansion: Dark Moon,84.99,Action Adventure,3,https://sandbox.oxylabs.io/products/310
+Psychonauts,86.99,Action,3,https://sandbox.oxylabs.io/products/311
+Dragon Quest XI: Echoes of an Elusive Age,86.99,Role-Playing,2,https://sandbox.oxylabs.io/products/312
+F-Zero: Maximum Velocity,78.99,Driving,3,https://sandbox.oxylabs.io/products/313
+Destiny: The Taken King,62.99,Action,4,https://sandbox.oxylabs.io/products/314
+Heroes of the Storm,63.99,Action,5,https://sandbox.oxylabs.io/products/315
+The Binding of Isaac: Afterbirth +,83.99,Action,4,https://sandbox.oxylabs.io/products/316
+Super Smash Bros. for Nintendo 3DS,85.99,Fighting,4,https://sandbox.oxylabs.io/products/317
+Medieval II: Total War Kingdoms,88.99,Strategy,4,https://sandbox.oxylabs.io/products/318
+DJMax Respect,80.99,Action,3,https://sandbox.oxylabs.io/products/319
+Resogun: Defenders,72.99,Action,4,https://sandbox.oxylabs.io/products/320
