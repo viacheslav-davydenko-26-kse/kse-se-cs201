@@ -179,12 +179,13 @@ from datetime import datetime, timezone
  
 import requests
 import pandas as pd
+import numpy as np
  
 API_URL = "https://api.binance.com/api/v3/klines"
 
 SYMBOL = "BTCUSDT"
 INTERVAL = "1h"
-LIMIT=10
+LIMIT=500
 
 params = dict(
     symbol=SYMBOL,
@@ -195,12 +196,12 @@ params = dict(
 response = requests.get(API_URL, params=params)
 response.raise_for_status()
 
-data = response.json()
+df_model = response.json()
 
 columns = ["Open time", "Open", "High", "Low", "Close", "Volume",
            "Close time", "Quote volume", "Trades",
            "Taker base volume", "Taker quote volume", "Ignore"]
-df = pd.DataFrame(data, columns=columns)
+df = pd.DataFrame(df_model, columns=columns)
 
 
 df["Date"] = pd.to_datetime(df["Open time"], unit="ms", utc=True)
@@ -210,3 +211,17 @@ required_columns = ["Open", "High", "Low", "Close", "Volume"]
 df = df[required_columns].astype(float)
 
 print(df)
+
+df_model = df.copy()
+
+short_window = 20
+long_window = 50
+
+df_model["SMA_Short"] = df_model["Close"].rolling(window=short_window).mean()
+df_model["SMA_Long"] = df_model["Close"].rolling(window=long_window).mean()
+ 
+df_model["Signal_SMA"] = np.where(df_model["SMA_Short"] > df_model["SMA_Long"], 1, 0)
+df_model["Position_SMA"] = df_model["Signal_SMA"].diff()
+
+print("Buy/Sell Signals (SMA):")
+print(df_model[['Close', 'Signal_SMA', 'Position_SMA']].to_string())
