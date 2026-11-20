@@ -61,6 +61,26 @@ pandas DataFrame.
 """
 
 # TODO: реалізуйте PART 1 нижче
+import datetime
+import requests
+import pandas
+
+API_URL = "https://api.open-meteo.com/v1/forecast"
+FORECAST_DAYS = 7
+LATITUDE = 50.45466
+LONGITUDE = 30.5233
+
+params = dict(
+    latitude=LATITUDE,
+    longitude=LONGITUDE,
+    hourly="temperature_2m,wind_speed_10m",
+    forecast_days=FORECAST_DAYS
+)
+
+response = requests.get(API_URL, params=params)
+
+data = response.json()
+print(data)
 
 
 
