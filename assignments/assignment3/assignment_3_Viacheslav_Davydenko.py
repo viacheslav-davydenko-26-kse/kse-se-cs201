@@ -173,3 +173,30 @@ PART 2 — TRADING ALGORITHM
 """
 
 # TODO: реалізуйте PART 2 нижче
+import time
+from datetime import datetime, timezone
+ 
+import requests
+import pandas as pd
+ 
+API_URL = "https://api.binance.com/api/v3/klines"
+
+SYMBOL = "BTCUSDT"
+INTERVAL = "1h"
+LIMIT=10
+
+params = dict(
+    symbol=SYMBOL,
+    interval=INTERVAL,
+    limit=LIMIT,
+)
+
+response = requests.get(API_URL, params=params)
+data = response.json()
+
+columns = ["Open time", "Open", "High", "Low", "Close", "Volume",
+           "Close time", "Quote volume", "Trades",
+           "Taker base volume", "Taker quote volume", "Ignore"]
+
+df = pd.DataFrame(data, columns=columns)
+print(df)
