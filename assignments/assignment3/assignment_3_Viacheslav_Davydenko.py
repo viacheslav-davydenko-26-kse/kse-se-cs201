@@ -61,9 +61,9 @@ pandas DataFrame.
 """
 
 # TODO: реалізуйте PART 1 нижче
-import datetime
+from datetime import datetime
 import requests
-import pandas
+import pandas as pd
 
 API_URL = "https://api.open-meteo.com/v1/forecast"
 FORECAST_DAYS = 7
@@ -80,8 +80,31 @@ params = dict(
 response = requests.get(API_URL, params=params)
 
 data = response.json()
-print(data)
 
+data_frame_js = {
+    "year": [],
+    "month": [],
+    "day": [],
+    "hour": [],
+    "minute": [],
+    "temperature": [],
+    "wind_speed": [],
+}
+
+for t in data["hourly"]["time"]:
+    dt = datetime.strptime(t, "%Y-%m-%dT%H:%M")
+    data_frame_js["year"].append(dt.year)
+    data_frame_js["month"].append(dt.month)
+    data_frame_js["day"].append(dt.day)
+    data_frame_js["hour"].append(dt.hour)
+    data_frame_js["minute"].append(dt.minute)
+
+data_frame_js["temperature"] = list(data["hourly"]["temperature_2m"])
+data_frame_js["wind_speed"] = list(data["hourly"]["wind_speed_10m"])
+
+dt = pd.DataFrame(data_frame_js)
+
+print(dt)
 
 
 
