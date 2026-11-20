@@ -182,7 +182,7 @@ print("==================")
 print("Task 2")
 print("==================")
 import time
-from datetime import datetime, timezone
+from datetime import datetime
  
 import requests
 import pandas as pd
