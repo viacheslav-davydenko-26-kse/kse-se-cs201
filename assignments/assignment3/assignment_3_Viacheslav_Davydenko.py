@@ -59,6 +59,10 @@ pandas DataFrame.
    - Виведіть отриманий DataFrame або його частину.
    - Виведіть результати всіх розрахунків у зрозумілому форматі.
 """
+print("==================")
+print("Task 1")
+print("==================")
+
 import requests
 import pandas as pd
 
@@ -174,7 +178,9 @@ PART 2 — TRADING ALGORITHM
    - фінальний прибуток / збиток.
 """
 
-# TODO: реалізуйте PART 2 нижче
+print("==================")
+print("Task 2")
+print("==================")
 import time
 from datetime import datetime, timezone
  
