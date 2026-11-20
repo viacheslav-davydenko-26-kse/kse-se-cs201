@@ -61,7 +61,6 @@ pandas DataFrame.
 """
 
 # TODO: реалізуйте PART 1 нижче
-from datetime import datetime
 import requests
 import pandas as pd
 
@@ -81,30 +80,23 @@ response = requests.get(API_URL, params=params)
 
 data = response.json()
 
-data_frame_js = {
-    "year": [],
-    "month": [],
-    "day": [],
-    "hour": [],
-    "minute": [],
-    "temperature": [],
-    "wind_speed": [],
-}
+df = pd.DataFrame({
+    "time": pd.to_datetime(data["hourly"]["time"]),
+    "temperature": data["hourly"]["temperature_2m"],
+    "wind_speed": data["hourly"]["wind_speed_10m"],
+})
+print(df)
 
-for t in data["hourly"]["time"]:
-    dt = datetime.strptime(t, "%Y-%m-%dT%H:%M")
-    data_frame_js["year"].append(dt.year)
-    data_frame_js["month"].append(dt.month)
-    data_frame_js["day"].append(dt.day)
-    data_frame_js["hour"].append(dt.hour)
-    data_frame_js["minute"].append(dt.minute)
+first_three_days = df[df["time"] < df["time"].iloc[0].normalize() + pd.Timedelta(days=3)]
 
-data_frame_js["temperature"] = list(data["hourly"]["temperature_2m"])
-data_frame_js["wind_speed"] = list(data["hourly"]["wind_speed_10m"])
-
-dt = pd.DataFrame(data_frame_js)
-
-print(dt)
+print("Мінімальна температура за наступні 3 дні:", first_three_days["temperature"].min())
+print("Максимальна температура за наступні 3 дні:", first_three_days["temperature"].max())
+print("Середня температура за наступні 3 дні:", round(first_three_days["temperature"].mean(), 2))
+avg_wind_speed = df["wind_speed"].mean()
+print("Середня швидкість вітру по всьому DataFrame:", round(avg_wind_speed, 2))
+print("Кількість годин, коли швидкість "
+      "вітру перевищує середню швидкість вітру по DataFrame:",
+      df[df["wind_speed"] > avg_wind_speed]["temperature"].count())
 
 
 
