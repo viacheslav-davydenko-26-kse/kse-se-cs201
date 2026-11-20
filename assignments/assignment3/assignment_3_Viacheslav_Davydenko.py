@@ -241,9 +241,11 @@ long_window = 50
 df_model["SMA_Short"] = df_model["Close"].rolling(window=short_window).mean()
 df_model["SMA_Long"] = df_model["Close"].rolling(window=long_window).mean()
 
-# Генерація сигналів
 df_model["Signal_SMA"] = np.where(df_model["SMA_Short"] > df_model["SMA_Long"], 1, 0)
 df_model["Position_SMA"] = df_model["Signal_SMA"].diff()
 
-print("Buy/Sell Signals (SMA):")
-print(df_model[['Close', 'Signal_SMA', 'Position_SMA']].to_string())
+# Генерація сигналів
+df_model["Action"] = "HOLD"
+df_model.loc[df_model["Position_SMA"] == 1, "Action"] = "BUY"
+df_model.loc[df_model["Position_SMA"] == -1, "Action"] = "SELL"
+print(df_model.to_string())
