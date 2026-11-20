@@ -77,6 +77,7 @@ params = dict(
 )
 
 response = requests.get(API_URL, params=params)
+response.raise_for_status()
 
 data = response.json()
 
@@ -192,11 +193,20 @@ params = dict(
 )
 
 response = requests.get(API_URL, params=params)
+response.raise_for_status()
+
 data = response.json()
 
 columns = ["Open time", "Open", "High", "Low", "Close", "Volume",
            "Close time", "Quote volume", "Trades",
            "Taker base volume", "Taker quote volume", "Ignore"]
-
 df = pd.DataFrame(data, columns=columns)
+
+
+df["Date"] = pd.to_datetime(df["Open time"], unit="ms", utc=True)
+df = df.set_index("Date")
+
+required_columns = ["Open", "High", "Low", "Close", "Volume"]
+df = df[required_columns].astype(float)
+
 print(df)
