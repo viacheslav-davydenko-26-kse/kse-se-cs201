@@ -212,6 +212,18 @@ df = df.set_index("Date")
 required_columns = ["Open", "High", "Low", "Close", "Volume"]
 df = df[required_columns].astype(float)
 
+print("Пропущені значення по колонках:")
+print(df.isna().sum())
+
+df = df.dropna()
+df = df[~df.index.duplicated(keep="first")]
+
+df = df.sort_index()
+
+df = df[(df[["Open", "High", "Low", "Close"]] > 0).all(axis=1)]
+df = df[df["Volume"] >= 0]
+df = df[df["High"] >= df["Low"]]
+
 print(df)
 
 # Розробка моделі
