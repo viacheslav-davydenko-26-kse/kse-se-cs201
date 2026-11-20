@@ -59,8 +59,6 @@ pandas DataFrame.
    - Виведіть отриманий DataFrame або його частину.
    - Виведіть результати всіх розрахунків у зрозумілому форматі.
 """
-
-# TODO: реалізуйте PART 1 нижче
 import requests
 import pandas as pd
 
@@ -69,6 +67,7 @@ FORECAST_DAYS = 7
 LATITUDE = 50.45466
 LONGITUDE = 30.5233
 
+# Отримання даних
 params = dict(
     latitude=LATITUDE,
     longitude=LONGITUDE,
@@ -81,6 +80,7 @@ response.raise_for_status()
 
 data = response.json()
 
+# Перетворення
 df = pd.DataFrame({
     "time": pd.to_datetime(data["hourly"]["time"]),
     "temperature": data["hourly"]["temperature_2m"],
@@ -90,6 +90,7 @@ print(df)
 
 first_three_days = df[df["time"] < df["time"].iloc[0].normalize() + pd.Timedelta(days=3)]
 
+# EDA і вивід результатів
 print("Мінімальна температура за наступні 3 дні:", first_three_days["temperature"].min())
 print("Максимальна температура за наступні 3 дні:", first_three_days["temperature"].max())
 print("Середня температура за наступні 3 дні:", round(first_three_days["temperature"].mean(), 2))
@@ -187,6 +188,7 @@ SYMBOL = "BTCUSDT"
 INTERVAL = "1h"
 LIMIT=500
 
+# Збір даних
 params = dict(
     symbol=SYMBOL,
     interval=INTERVAL,
@@ -203,7 +205,7 @@ columns = ["Open time", "Open", "High", "Low", "Close", "Volume",
            "Taker base volume", "Taker quote volume", "Ignore"]
 df = pd.DataFrame(df_model, columns=columns)
 
-
+# Підготовка даних
 df["Date"] = pd.to_datetime(df["Open time"], unit="ms", utc=True)
 df = df.set_index("Date")
 
@@ -212,6 +214,7 @@ df = df[required_columns].astype(float)
 
 print(df)
 
+# Розробка моделі
 df_model = df.copy()
 
 short_window = 20
@@ -219,7 +222,8 @@ long_window = 50
 
 df_model["SMA_Short"] = df_model["Close"].rolling(window=short_window).mean()
 df_model["SMA_Long"] = df_model["Close"].rolling(window=long_window).mean()
- 
+
+# Генерація сигналів
 df_model["Signal_SMA"] = np.where(df_model["SMA_Short"] > df_model["SMA_Long"], 1, 0)
 df_model["Position_SMA"] = df_model["Signal_SMA"].diff()
 
