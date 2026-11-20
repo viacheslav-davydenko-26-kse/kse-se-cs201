@@ -248,4 +248,4 @@ df_model["Position_SMA"] = df_model["Signal_SMA"].diff()
 df_model["Action"] = "HOLD"
 df_model.loc[df_model["Position_SMA"] == 1, "Action"] = "BUY"
 df_model.loc[df_model["Position_SMA"] == -1, "Action"] = "SELL"
-print(df_model.to_string())
+print(df_model[["Close", "SMA_Short", "SMA_Long", "Action"]].to_string())
